@@ -42,5 +42,20 @@
     "failed": 12,
     "stage": "summarize",
     "timestamp": "2026-05-11T14:31:18+00:00"
+  },
+  {
+    "channels": 10,
+    "failures": [],
+    "fetched": 50,
+    "new_videos": 0,
+    "stage": "ingest",
+    "timestamp": "2026-05-11T15:08:20+00:00"
+  },
+  {
+    "attempted": 12,
+    "completed": 0,
+    "failed": 12,
+    "stage": "summarize",
+    "timestamp": "2026-05-11T15:08:42+00:00"
   }
 ]

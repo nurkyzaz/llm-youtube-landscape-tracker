@@ -2412,6 +2412,22 @@ window.__DATA__ = {
       "channel": "LangChain",
       "vid": "PYJZJAna6pI",
       "title": "What if AI agents skipped language entirely to communicate?"
+    },
+    {
+      "t": 1778512100000,
+      "verb": "ingest",
+      "msg": "50 videos fetched, 0 new",
+      "channel": "LangChain",
+      "vid": "PYJZJAna6pI",
+      "title": "What if AI agents skipped language entirely to communicate?"
+    },
+    {
+      "t": 1778512122000,
+      "verb": "summarize",
+      "msg": "0 summaries completed, 12 queued/failed",
+      "channel": "LangChain",
+      "vid": "PYJZJAna6pI",
+      "title": "What if AI agents skipped language entirely to communicate?"
     }
   ],
   "META": {
