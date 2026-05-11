@@ -1,0 +1,456 @@
+[
+  {
+    "author": "LangChain",
+    "channel": "LangChain",
+    "channel_focus": [
+      "agents",
+      "RAG",
+      "tool calling",
+      "LLM applications"
+    ],
+    "channel_id": "UCC-lyoTfSrcJzA1ab3APAgw",
+    "channel_url": "https://www.youtube.com/@LangChain",
+    "first_seen_at": "2026-05-11T14:20:43+00:00",
+    "published_at": "2026-05-11T14:00:47+00:00",
+    "relationship": "framework/vendor",
+    "summarized_at": "2026-05-11T14:21:38+00:00",
+    "summary": {
+      "channel_relationship": "framework/vendor",
+      "claims": [
+        "We're very excited around like RLMs and like intricate ways of doing context management.",
+        "And so this was an experiment of like taking RLMs and giving like a way to do like KV cache communication between the sub agents.",
+        "Basically trying to reduce the amount of tokens that get used by the RLM by having instead of them communicate in token space of like this is the output I'm going to take this piece of text and send it over.",
+        "They just like take the KV cache and there's like an interesting kernel trick that is used to reduce it and pass it over directly."
+      ],
+      "evidence_snippets": [
+        "We're very excited around like RLMs and like intricate ways of doing context management.",
+        "And so this was an experiment of like taking RLMs and giving like a way to do like KV cache communication between the sub agents.",
+        "Basically trying to reduce the amount of tokens that get used by the RLM by having instead of them communicate in token space of like this is the output I'm going to take this piece of text and send it over."
+      ],
+      "provider_error": "GITHUB_TOKEN is not set",
+      "speaker": "LangChain",
+      "stance": "descriptive",
+      "summary": "LangChain discusses agents in a transcript-backed video titled \"What if AI agents skipped language entirely to communicate?\".",
+      "summary_provider": "local-heuristic",
+      "tools_models_mentioned": [
+        "RLMs",
+        "RLM",
+        "And",
+        "Basically",
+        "They",
+        "Can"
+      ],
+      "topics": [
+        "agents"
+      ]
+    },
+    "summary_status": "complete",
+    "title": "What if AI agents skipped language entirely to communicate?",
+    "transcript_characters": 831,
+    "transcript_checked_at": "2026-05-11T14:21:38+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
+    "updated_at": "2026-05-11T14:01:12+00:00",
+    "url": "https://www.youtube.com/watch?v=PYJZJAna6pI",
+    "video_id": "PYJZJAna6pI"
+  },
+  {
+    "author": "Matt Wolfe",
+    "channel": "Matt Wolfe",
+    "channel_focus": [
+      "AI tools",
+      "model releases",
+      "creator workflows",
+      "industry news"
+    ],
+    "channel_id": "UChpleBmo18P08aKCIgti38g",
+    "channel_url": "https://www.youtube.com/@mreflow",
+    "first_seen_at": "2026-05-11T14:20:30+00:00",
+    "published_at": "2026-05-11T12:27:39+00:00",
+    "relationship": "tool/news curator",
+    "summarized_at": "2026-05-11T14:21:40+00:00",
+    "summary": {
+      "channel_relationship": "tool/news curator",
+      "claims": [
+        "Nvidia and PDE group are partnering with startup SPAN to install mini data centers on the walls of new homes.",
+        "Each unit packs 16 Nvidia Blackwell GPUs, four AMD epic CPUs, and 3 TB of RAM and taps unused home electrical capacity to run AI inference workloads.",
+        "So like new homes are going to have AI built into them.",
+        "you're just going to have like an AI module built onto your house that's like an AI supercomputer."
+      ],
+      "evidence_snippets": [
+        "Nvidia and PDE group are partnering with startup SPAN to install mini data centers on the walls of new homes.",
+        "Each unit packs 16 Nvidia Blackwell GPUs, four AMD epic CPUs, and 3 TB of RAM and taps unused home electrical capacity to run AI inference workloads.",
+        "So like new homes are going to have AI built into them."
+      ],
+      "provider_error": "GITHUB_TOKEN is not set",
+      "speaker": "Matt Wolfe",
+      "stance": "descriptive",
+      "summary": "Matt Wolfe discusses LLM tooling in a transcript-backed video titled \"AI Is Being Built Into New Homes\".",
+      "summary_provider": "local-heuristic",
+      "tools_models_mentioned": [
+        "Nvidia",
+        "And",
+        "PDE",
+        "SPAN",
+        "Each",
+        "Blackwell"
+      ],
+      "topics": [
+        "tooling"
+      ]
+    },
+    "summary_status": "complete",
+    "title": "AI Is Being Built Into New Homes",
+    "transcript_characters": 924,
+    "transcript_checked_at": "2026-05-11T14:21:40+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
+    "updated_at": "2026-05-11T12:59:36+00:00",
+    "url": "https://www.youtube.com/watch?v=C4nXMAX27W0",
+    "video_id": "C4nXMAX27W0"
+  },
+  {
+    "author": "IBM Technology",
+    "channel": "IBM Technology",
+    "channel_focus": [
+      "RAG",
+      "agents",
+      "enterprise adoption",
+      "governance"
+    ],
+    "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+    "channel_url": "https://www.youtube.com/@IBMTechnology",
+    "first_seen_at": "2026-05-11T14:20:41+00:00",
+    "published_at": "2026-05-11T11:01:31+00:00",
+    "relationship": "enterprise explainer",
+    "summarized_at": "2026-05-11T14:21:48+00:00",
+    "summary": {
+      "channel_relationship": "enterprise explainer",
+      "claims": [
+        "Predictive AI, generative AI, sometimes people use these terms interchangeably.",
+        "They shouldn't because these are fundamentally different tools that answer different questions.",
+        "So predictive AI, that asks the question specifically, what will happen?",
+        "It looks at historical data, and it forecasts an outcome."
+      ],
+      "evidence_snippets": [
+        "Predictive AI, generative AI, sometimes people use these terms interchangeably.",
+        "They shouldn't because these are fundamentally different tools that answer different questions.",
+        "So predictive AI, that asks the question specifically, what will happen?"
+      ],
+      "provider_error": "GITHUB_TOKEN is not set",
+      "speaker": "IBM Technology",
+      "stance": "descriptive",
+      "summary": "IBM Technology discusses RAG, coding, research papers in a transcript-backed video titled \"Predictive vs Generative AI: How They Work and When to Use Each\".",
+      "summary_provider": "local-heuristic",
+      "tools_models_mentioned": [
+        "And",
+        "Generative",
+        "Well",
+        "That",
+        "Now",
+        "What"
+      ],
+      "topics": [
+        "RAG",
+        "coding",
+        "research papers",
+        "tooling",
+        "enterprise adoption"
+      ]
+    },
+    "summary_status": "complete",
+    "title": "Predictive vs Generative AI: How They Work and When to Use Each",
+    "transcript_characters": 8508,
+    "transcript_checked_at": "2026-05-11T14:21:48+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
+    "updated_at": "2026-05-11T11:01:48+00:00",
+    "url": "https://www.youtube.com/watch?v=phOhGqpXss4",
+    "video_id": "phOhGqpXss4"
+  },
+  {
+    "author": "AssemblyAI",
+    "channel": "AssemblyAI",
+    "channel_focus": [
+      "speech AI",
+      "LLM apps",
+      "multimodal",
+      "tutorials"
+    ],
+    "channel_id": "UCtatfZMf-8EkIwASXM4ts0A",
+    "channel_url": "https://www.youtube.com/@AssemblyAI",
+    "first_seen_at": "2026-05-11T14:20:44+00:00",
+    "published_at": "2026-05-11T04:04:15+00:00",
+    "relationship": "developer platform",
+    "summarized_at": "2026-05-11T14:21:51+00:00",
+    "summary": {
+      "channel_relationship": "developer platform",
+      "claims": [
+        "Uh, I'm here today to moderate this amazing panel with people who are actually building in Voice AI.",
+        "Um, and going to answer some of the questions that you all put on your forms when you registered for this event, as well as some that we've uh, set up in advance just to make sure we kind of like cover all our bases.",
+        "So, a quick housekeeping, we'll do this for about uh, 20 25 minutes.",
+        "So again, we don't have mics, we'll talk as loud as we can."
+      ],
+      "evidence_snippets": [
+        "Uh, I'm here today to moderate this amazing panel with people who are actually building in Voice AI.",
+        "Um, and going to answer some of the questions that you all put on your forms when you registered for this event, as well as some that we've uh, set up in advance just to make sure we kind of like cover all our bases.",
+        "So, a quick housekeeping, we'll do this for about uh, 20 25 minutes."
+      ],
+      "provider_error": "GITHUB_TOKEN is not set",
+      "speaker": "AssemblyAI",
+      "stance": "descriptive",
+      "summary": "AssemblyAI discusses agents, RAG, evals in a transcript-backed video titled \"Voice AI: Beyond Transcription with Granola, CoLoop & EdgeTier\".",
+      "summary_provider": "local-heuristic",
+      "tools_models_mentioned": [
+        "Yeah",
+        "And",
+        "But",
+        "MCP",
+        "API",
+        "You"
+      ],
+      "topics": [
+        "agents",
+        "RAG",
+        "evals",
+        "coding",
+        "research papers"
+      ]
+    },
+    "summary_status": "complete",
+    "title": "Voice AI: Beyond Transcription with Granola, CoLoop & EdgeTier",
+    "transcript_characters": 45000,
+    "transcript_checked_at": "2026-05-11T14:21:51+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
+    "updated_at": "2026-05-11T09:50:14+00:00",
+    "url": "https://www.youtube.com/watch?v=_9Kqr4-hf68",
+    "video_id": "_9Kqr4-hf68"
+  },
+  {
+    "author": "DeepLearningAI",
+    "channel": "DeepLearning.AI",
+    "channel_focus": [
+      "courses",
+      "interviews",
+      "LLM concepts",
+      "AI engineering"
+    ],
+    "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+    "channel_url": "https://www.youtube.com/@Deeplearningai",
+    "first_seen_at": "2026-05-11T14:20:46+00:00",
+    "published_at": "2026-05-08T21:57:20+00:00",
+    "relationship": "education",
+    "summarized_at": "2026-05-11T14:21:53+00:00",
+    "summary": {
+      "channel_relationship": "education",
+      "claims": [],
+      "evidence_snippets": [],
+      "provider_error": "GITHUB_TOKEN is not set",
+      "speaker": "DeepLearning.AI",
+      "stance": "descriptive",
+      "summary": "DeepLearning.AI discusses LLM tooling in a transcript-backed video titled \"Vibe coding works… until your agent confidently builds the wrong thing\".",
+      "summary_provider": "local-heuristic",
+      "tools_models_mentioned": [
+        "Here",
+        "Vibe",
+        "Okay",
+        "Make",
+        "Got",
+        "Seriously"
+      ],
+      "topics": [
+        "tooling"
+      ]
+    },
+    "summary_status": "complete",
+    "title": "Vibe coding works… until your agent confidently builds the wrong thing",
+    "transcript_characters": 235,
+    "transcript_checked_at": "2026-05-11T14:21:53+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
+    "updated_at": "2026-05-09T10:46:52+00:00",
+    "url": "https://www.youtube.com/watch?v=DygEd_WvUxU",
+    "video_id": "DygEd_WvUxU"
+  },
+  {
+    "author": "Two Minute Papers",
+    "channel": "Two Minute Papers",
+    "channel_focus": [
+      "research papers",
+      "model capabilities",
+      "multimodal AI"
+    ],
+    "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+    "channel_url": "https://www.youtube.com/@TwoMinutePapers",
+    "first_seen_at": "2026-05-11T14:20:31+00:00",
+    "published_at": "2026-05-08T16:46:30+00:00",
+    "relationship": "research explainer",
+    "summarized_at": "2026-05-11T14:22:06+00:00",
+    "summary": {
+      "channel_relationship": "research explainer",
+      "claims": [
+        "Everyone is talking about Frontier Chad GPT models that do all the thinking and the brilliant rocket science stuff.",
+        "But the instant version, this is actually what hundreds of millions of people around the globe use.",
+        "It's what grandma uses when asking about medication.",
+        "And we are going to talk about the good, the bad, and the insane."
+      ],
+      "evidence_snippets": [
+        "Everyone is talking about Frontier Chad GPT models that do all the thinking and the brilliant rocket science stuff.",
+        "But the instant version, this is actually what hundreds of millions of people around the globe use.",
+        "It's what grandma uses when asking about medication."
+      ],
+      "provider_error": "GITHUB_TOKEN is not set",
+      "speaker": "Two Minute Papers",
+      "stance": "descriptive",
+      "summary": "Two Minute Papers discusses model releases, RAG, evals in a transcript-backed video titled \"OpenAI's ChatGPT 5.5 Instant: The Good, The Bad And The Insane\".",
+      "summary_provider": "local-heuristic",
+      "tools_models_mentioned": [
+        "And",
+        "Well",
+        "GPT",
+        "But",
+        "Okay",
+        "Here"
+      ],
+      "topics": [
+        "model releases",
+        "RAG",
+        "evals",
+        "research papers",
+        "tooling"
+      ]
+    },
+    "summary_status": "complete",
+    "title": "OpenAI's ChatGPT 5.5 Instant: The Good, The Bad And The Insane",
+    "transcript_characters": 6488,
+    "transcript_checked_at": "2026-05-11T14:22:06+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
+    "updated_at": "2026-05-10T17:34:31+00:00",
+    "url": "https://www.youtube.com/watch?v=4nQnhjimB4Y",
+    "video_id": "4nQnhjimB4Y"
+  },
+  {
+    "author": "The AI Advantage",
+    "channel": "The AI Advantage",
+    "channel_focus": [
+      "productivity",
+      "agents",
+      "automation",
+      "AI tools"
+    ],
+    "channel_id": "UCHhYXsLBEVVnbvsq57n1MTQ",
+    "channel_url": "https://www.youtube.com/@aiadvantage",
+    "first_seen_at": "2026-05-11T14:20:39+00:00",
+    "published_at": "2026-05-08T16:13:15+00:00",
+    "relationship": "applied workflow educator",
+    "summarized_at": "2026-05-11T14:22:08+00:00",
+    "summary": {
+      "channel_relationship": "applied workflow educator",
+      "claims": [
+        "Well, I guess it is a new model, but more importantly, it's how you're supposed to interact with Chat GPT's new main model shifted.",
+        "Basically, instead of being super detailed, they now recommend you prompt for results.",
+        "So, what that exactly means and how the results differ from what you might have experienced last week.",
+        "And also, they claim that hallucinations were reduced by over 50%."
+      ],
+      "evidence_snippets": [
+        "Well, I guess it is a new model, but more importantly, it's how you're supposed to interact with Chat GPT's new main model shifted.",
+        "Basically, instead of being super detailed, they now recommend you prompt for results.",
+        "So, what that exactly means and how the results differ from what you might have experienced last week."
+      ],
+      "provider_error": "GITHUB_TOKEN is not set",
+      "speaker": "The AI Advantage",
+      "stance": "descriptive",
+      "summary": "The AI Advantage discusses model releases, agents, RAG in a transcript-backed video titled \"New ChatGPT Model & Memory Features Explained (AI News You Can Use)\".",
+      "summary_provider": "local-heuristic",
+      "tools_models_mentioned": [
+        "And",
+        "GPT",
+        "Now",
+        "That",
+        "You",
+        "OpenAI"
+      ],
+      "topics": [
+        "model releases",
+        "agents",
+        "RAG",
+        "evals",
+        "coding"
+      ]
+    },
+    "summary_status": "complete",
+    "title": "New ChatGPT Model & Memory Features Explained (AI News You Can Use)",
+    "transcript_characters": 14187,
+    "transcript_checked_at": "2026-05-11T14:22:08+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
+    "updated_at": "2026-05-11T13:30:17+00:00",
+    "url": "https://www.youtube.com/watch?v=ltw8PE_uILw",
+    "video_id": "ltw8PE_uILw"
+  },
+  {
+    "author": "AI Explained",
+    "channel": "AI Explained",
+    "channel_focus": [
+      "model releases",
+      "benchmarks",
+      "capabilities",
+      "safety"
+    ],
+    "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+    "channel_url": "https://www.youtube.com/@aiexplained-official",
+    "first_seen_at": "2026-05-11T14:20:37+00:00",
+    "published_at": "2026-04-24T18:45:02+00:00",
+    "relationship": "frontier-model analyst",
+    "summary_status": "pending",
+    "title": "GPT 5.5 Arrives, DeepSeek V4 Drops, and the Compute War Intensifies",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-10T13:39:21+00:00",
+    "url": "https://www.youtube.com/watch?v=jz0rNhfAKo8",
+    "video_id": "jz0rNhfAKo8"
+  },
+  {
+    "author": "Yannic Kilcher",
+    "channel": "Yannic Kilcher",
+    "channel_focus": [
+      "papers",
+      "open models",
+      "training",
+      "alignment"
+    ],
+    "channel_id": "UCZHmQk67mSJgfCCTn7xBfew",
+    "channel_url": "https://www.youtube.com/@YannicKilcher",
+    "first_seen_at": "2026-05-11T14:20:33+00:00",
+    "published_at": "2026-03-06T22:07:33+00:00",
+    "relationship": "research analyst",
+    "summary_status": "pending",
+    "title": "I BUILT A FULLY AUTOMATIC MANSPLAINER",
+    "transcript_status": "pending",
+    "updated_at": "2026-03-10T22:14:37+00:00",
+    "url": "https://www.youtube.com/watch?v=xHi8PUIVyoo",
+    "video_id": "xHi8PUIVyoo"
+  },
+  {
+    "author": "Andrej Karpathy",
+    "channel": "Andrej Karpathy",
+    "channel_focus": [
+      "LLM internals",
+      "transformers",
+      "coding",
+      "deep learning"
+    ],
+    "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+    "channel_url": "https://www.youtube.com/@AndrejKarpathy",
+    "first_seen_at": "2026-05-11T14:20:35+00:00",
+    "published_at": "2025-02-27T22:29:56+00:00",
+    "relationship": "education",
+    "summary_status": "pending",
+    "title": "How I use LLMs",
+    "transcript_status": "pending",
+    "updated_at": "2026-02-27T00:47:02+00:00",
+    "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
+    "video_id": "EWvNQjAaOHw"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "channels": 10,
+    "failures": [],
+    "fetched": 10,
+    "new_videos": 10,
+    "stage": "ingest",
+    "timestamp": "2026-05-11T14:20:46+00:00"
+  },
+  {
+    "attempted": 2,
+    "completed": 0,
+    "failed": 2,
+    "stage": "summarize",
+    "timestamp": "2026-05-11T14:21:03+00:00"
+  },
+  {
+    "attempted": 2,
+    "completed": 2,
+    "failed": 0,
+    "stage": "summarize",
+    "timestamp": "2026-05-11T14:21:40+00:00"
+  },
+  {
+    "attempted": 5,
+    "completed": 5,
+    "failed": 0,
+    "stage": "summarize",
+    "timestamp": "2026-05-11T14:22:08+00:00"
+  }
+]

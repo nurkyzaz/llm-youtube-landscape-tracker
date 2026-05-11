@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns="http://www.w3.org/2005/Atom">
+  <entry>
+    <yt:videoId>abc123</yt:videoId>
+    <title>LLM Agents Explained</title>
+    <published>2026-05-01T12:00:00+00:00</published>
+    <updated>2026-05-01T13:00:00+00:00</updated>
+    <author><name>Example Channel</name></author>
+  </entry>
+</feed>
