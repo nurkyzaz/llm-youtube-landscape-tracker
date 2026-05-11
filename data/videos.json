@@ -13,41 +13,34 @@
     "first_seen_at": "2026-05-11T14:20:43+00:00",
     "published_at": "2026-05-11T14:00:47+00:00",
     "relationship": "framework/vendor",
-    "summarized_at": "2026-05-11T14:21:38+00:00",
+    "summarized_at": "2026-05-11T15:59:08+00:00",
     "summary": {
-      "channel_relationship": "framework/vendor",
+      "channel_relationship": "LangChain is a framework/vendor related to LLM development.",
       "claims": [
-        "We're very excited around like RLMs and like intricate ways of doing context management.",
-        "And so this was an experiment of like taking RLMs and giving like a way to do like KV cache communication between the sub agents.",
-        "Basically trying to reduce the amount of tokens that get used by the RLM by having instead of them communicate in token space of like this is the output I'm going to take this piece of text and send it over.",
-        "They just like take the KV cache and there's like an interesting kernel trick that is used to reduce it and pass it over directly."
+        "RLMs can optimize communication by using KV cache instead of token space."
       ],
       "evidence_snippets": [
         "We're very excited around like RLMs and like intricate ways of doing context management.",
-        "And so this was an experiment of like taking RLMs and giving like a way to do like KV cache communication between the sub agents.",
-        "Basically trying to reduce the amount of tokens that get used by the RLM by having instead of them communicate in token space of like this is the output I'm going to take this piece of text and send it over."
+        "This was an experiment of like taking RLMs and giving like a way to do like KV cache communication."
       ],
-      "provider_error": "GITHUB_TOKEN is not set",
       "speaker": "LangChain",
-      "stance": "descriptive",
-      "summary": "LangChain discusses agents in a transcript-backed video titled \"What if AI agents skipped language entirely to communicate?\".",
-      "summary_provider": "local-heuristic",
+      "stance": "optimistic",
+      "summary": "The video discusses the potential of RLMs to enhance communication efficiency through KV cache management. It explores the balance between closed source and open source models in this context.",
+      "summary_provider": "openai/gpt-4o-mini",
       "tools_models_mentioned": [
         "RLMs",
-        "RLM",
-        "And",
-        "Basically",
-        "They",
-        "Can"
+        "Anthropic cloud family orchestrator"
       ],
       "topics": [
-        "agents"
+        "agents",
+        "RAG",
+        "tooling"
       ]
     },
     "summary_status": "complete",
     "title": "What if AI agents skipped language entirely to communicate?",
     "transcript_characters": 831,
-    "transcript_checked_at": "2026-05-11T14:21:38+00:00",
+    "transcript_checked_at": "2026-05-11T15:59:00+00:00",
     "transcript_provider": "youtube-transcript-api",
     "transcript_status": "available",
     "updated_at": "2026-05-11T14:01:12+00:00",
@@ -68,41 +61,35 @@
     "first_seen_at": "2026-05-11T14:20:30+00:00",
     "published_at": "2026-05-11T12:27:39+00:00",
     "relationship": "tool/news curator",
-    "summarized_at": "2026-05-11T14:21:40+00:00",
+    "summarized_at": "2026-05-11T15:59:17+00:00",
     "summary": {
-      "channel_relationship": "tool/news curator",
+      "channel_relationship": "Matt Wolfe curates news and tools related to AI and technology, providing insights into emerging trends.",
       "claims": [
-        "Nvidia and PDE group are partnering with startup SPAN to install mini data centers on the walls of new homes.",
-        "Each unit packs 16 Nvidia Blackwell GPUs, four AMD epic CPUs, and 3 TB of RAM and taps unused home electrical capacity to run AI inference workloads.",
-        "So like new homes are going to have AI built into them.",
-        "you're just going to have like an AI module built onto your house that's like an AI supercomputer."
+        "New homes will have AI built into them, similar to internet or cable.",
+        "Homeowners could run AI workloads and earn money from excess compute capacity."
       ],
       "evidence_snippets": [
-        "Nvidia and PDE group are partnering with startup SPAN to install mini data centers on the walls of new homes.",
-        "Each unit packs 16 Nvidia Blackwell GPUs, four AMD epic CPUs, and 3 TB of RAM and taps unused home electrical capacity to run AI inference workloads.",
-        "So like new homes are going to have AI built into them."
+        "It's going to be like internet or cable. you're just going to have like an AI module built onto your house.",
+        "I can also see this playing out in a way where you have your own personal compute at home."
       ],
-      "provider_error": "GITHUB_TOKEN is not set",
       "speaker": "Matt Wolfe",
-      "stance": "descriptive",
-      "summary": "Matt Wolfe discusses LLM tooling in a transcript-backed video titled \"AI Is Being Built Into New Homes\".",
-      "summary_provider": "local-heuristic",
+      "stance": "optimistic",
+      "summary": "The video discusses the integration of AI into new homes through mini data centers, allowing homeowners to run AI workloads. This setup could enable users to monetize their excess computing power, drawing parallels to blockchain mining.",
+      "summary_provider": "openai/gpt-4o-mini",
       "tools_models_mentioned": [
-        "Nvidia",
-        "And",
-        "PDE",
-        "SPAN",
-        "Each",
-        "Blackwell"
+        "Nvidia Blackwell GPUs",
+        "AMD epic CPUs",
+        "AI supercomputer"
       ],
       "topics": [
-        "tooling"
+        "tooling",
+        "enterprise adoption"
       ]
     },
     "summary_status": "complete",
     "title": "AI Is Being Built Into New Homes",
     "transcript_characters": 924,
-    "transcript_checked_at": "2026-05-11T14:21:40+00:00",
+    "transcript_checked_at": "2026-05-11T15:59:10+00:00",
     "transcript_provider": "youtube-transcript-api",
     "transcript_status": "available",
     "updated_at": "2026-05-11T12:59:36+00:00",
@@ -123,45 +110,37 @@
     "first_seen_at": "2026-05-11T14:20:41+00:00",
     "published_at": "2026-05-11T11:01:31+00:00",
     "relationship": "enterprise explainer",
-    "summarized_at": "2026-05-11T14:21:48+00:00",
+    "summarized_at": "2026-05-11T15:59:24+00:00",
     "summary": {
-      "channel_relationship": "enterprise explainer",
+      "channel_relationship": "IBM Technology provides enterprise-focused explanations of AI concepts, differentiating itself from more general LLM channels.",
       "claims": [
-        "Predictive AI, generative AI, sometimes people use these terms interchangeably.",
-        "They shouldn't because these are fundamentally different tools that answer different questions.",
-        "So predictive AI, that asks the question specifically, what will happen?",
-        "It looks at historical data, and it forecasts an outcome."
+        "Predictive AI forecasts outcomes based on historical data, while generative AI creates new content.",
+        "Large language models (LLMs) are primarily generative, despite their predictive capabilities at the token level."
       ],
       "evidence_snippets": [
-        "Predictive AI, generative AI, sometimes people use these terms interchangeably.",
-        "They shouldn't because these are fundamentally different tools that answer different questions.",
-        "So predictive AI, that asks the question specifically, what will happen?"
+        "Predictive AI is about making predictions about specific measurable things. (0:30)",
+        "Generative AI creates new content that resembles its training data. (1:00)",
+        "LLMs predict the next token, but their purpose is primarily generative. (3:30)"
       ],
-      "provider_error": "GITHUB_TOKEN is not set",
       "speaker": "IBM Technology",
       "stance": "descriptive",
-      "summary": "IBM Technology discusses RAG, coding, research papers in a transcript-backed video titled \"Predictive vs Generative AI: How They Work and When to Use Each\".",
-      "summary_provider": "local-heuristic",
+      "summary": "The video explains the differences between predictive and generative AI, emphasizing that while predictive AI focuses on forecasting measurable outcomes, generative AI is about creating new content. It highlights the role of large language models as primarily generative tools, despite their predictive functionalities.",
+      "summary_provider": "openai/gpt-4o-mini",
       "tools_models_mentioned": [
-        "And",
-        "Generative",
-        "Well",
-        "That",
-        "Now",
-        "What"
+        "LLMs",
+        "transformer architecture",
+        "diffusion models"
       ],
       "topics": [
-        "RAG",
-        "coding",
-        "research papers",
-        "tooling",
+        "generative AI",
+        "predictive AI",
         "enterprise adoption"
       ]
     },
     "summary_status": "complete",
     "title": "Predictive vs Generative AI: How They Work and When to Use Each",
     "transcript_characters": 8508,
-    "transcript_checked_at": "2026-05-11T14:21:48+00:00",
+    "transcript_checked_at": "2026-05-11T15:59:19+00:00",
     "transcript_provider": "youtube-transcript-api",
     "transcript_status": "available",
     "updated_at": "2026-05-11T11:01:48+00:00",
@@ -182,45 +161,38 @@
     "first_seen_at": "2026-05-11T14:20:44+00:00",
     "published_at": "2026-05-11T04:04:15+00:00",
     "relationship": "developer platform",
-    "summarized_at": "2026-05-11T14:21:51+00:00",
+    "summarized_at": "2026-05-11T15:59:32+00:00",
     "summary": {
-      "channel_relationship": "developer platform",
+      "channel_relationship": "AssemblyAI is a developer platform that collaborates with various companies building voice AI solutions.",
       "claims": [
-        "Uh, I'm here today to moderate this amazing panel with people who are actually building in Voice AI.",
-        "Um, and going to answer some of the questions that you all put on your forms when you registered for this event, as well as some that we've uh, set up in advance just to make sure we kind of like cover all our bases.",
-        "So, a quick housekeeping, we'll do this for about uh, 20 25 minutes.",
-        "So again, we don't have mics, we'll talk as loud as we can."
+        "Assembly AI builds voice AI models for developers.",
+        "Voice AI is used to transcribe qualitative data from customer interviews.",
+        "Real-time transcription is crucial for effective meeting notes."
       ],
       "evidence_snippets": [
-        "Uh, I'm here today to moderate this amazing panel with people who are actually building in Voice AI.",
-        "Um, and going to answer some of the questions that you all put on your forms when you registered for this event, as well as some that we've uh, set up in advance just to make sure we kind of like cover all our bases.",
-        "So, a quick housekeeping, we'll do this for about uh, 20 25 minutes."
+        "We build voice AI models for developers. (0:00)",
+        "Voice was a big unlock for us. (0:00)",
+        "Transcription is the basis of everything we do. (0:00)"
       ],
-      "provider_error": "GITHUB_TOKEN is not set",
-      "speaker": "AssemblyAI",
-      "stance": "descriptive",
-      "summary": "AssemblyAI discusses agents, RAG, evals in a transcript-backed video titled \"Voice AI: Beyond Transcription with Granola, CoLoop & EdgeTier\".",
-      "summary_provider": "local-heuristic",
+      "speaker": "Ryan (host)",
+      "stance": "optimistic",
+      "summary": "The video features a panel discussion moderated by Ryan from Assembly AI, focusing on the applications and challenges of voice AI in various companies. Panelists from Kodoop, EdgeTier, and Granola share insights on how they leverage voice AI for transcription and customer insights, emphasizing the importance of accurate speaker identification and real-time processing.",
+      "summary_provider": "openai/gpt-4o-mini",
       "tools_models_mentioned": [
-        "Yeah",
-        "And",
-        "But",
-        "MCP",
-        "API",
-        "You"
+        "Assembly AI",
+        "Kodoop",
+        "EdgeTier",
+        "Granola"
       ],
       "topics": [
-        "agents",
-        "RAG",
-        "evals",
-        "coding",
-        "research papers"
+        "tooling",
+        "enterprise adoption"
       ]
     },
     "summary_status": "complete",
     "title": "Voice AI: Beyond Transcription with Granola, CoLoop & EdgeTier",
     "transcript_characters": 45000,
-    "transcript_checked_at": "2026-05-11T14:21:51+00:00",
+    "transcript_checked_at": "2026-05-11T15:59:26+00:00",
     "transcript_provider": "youtube-transcript-api",
     "transcript_status": "available",
     "updated_at": "2026-05-11T09:50:14+00:00",
@@ -241,11 +213,35 @@
     "first_seen_at": "2026-05-11T14:30:48+00:00",
     "published_at": "2026-05-11T04:03:56+00:00",
     "relationship": "developer platform",
-    "summarized_at": "2026-05-11T15:15:51+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=vANGyXly3pM! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
-    "summary_status": "failed",
+    "summarized_at": "2026-05-11T15:59:38+00:00",
+    "summary": {
+      "channel_relationship": "AssemblyAI is a developer platform that focuses on voice technology, which aligns with other LLM channels exploring advancements in AI.",
+      "claims": [
+        "Speaker identification and diarization are exciting advancements in voice technology."
+      ],
+      "evidence_snippets": [
+        "Speaker identification and diarization is probably the most exciting thing for us.",
+        "If we can crack that, it just unlocks so many things that we can do downstream."
+      ],
+      "speaker": "host",
+      "stance": "optimistic",
+      "summary": "The video discusses the excitement around speaker identification and diarization in voice technology. The host emphasizes the challenges of real-time diarization and the potential benefits of overcoming these hurdles.",
+      "summary_provider": "openai/gpt-4o-mini",
+      "tools_models_mentioned": [
+        "speaker identification",
+        "diarization"
+      ],
+      "topics": [
+        "model releases",
+        "tooling"
+      ]
+    },
+    "summary_status": "complete",
     "title": "The Future IS Speaker Identification 🚀",
-    "transcript_status": "transcript_unavailable",
+    "transcript_characters": 509,
+    "transcript_checked_at": "2026-05-11T15:59:34+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
     "updated_at": "2026-05-11T11:09:16+00:00",
     "url": "https://www.youtube.com/watch?v=vANGyXly3pM",
     "video_id": "vANGyXly3pM"
@@ -264,11 +260,36 @@
     "first_seen_at": "2026-05-11T14:30:48+00:00",
     "published_at": "2026-05-11T04:02:15+00:00",
     "relationship": "developer platform",
-    "summarized_at": "2026-05-11T15:15:54+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=BFu7YI_Y30w! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
-    "summary_status": "failed",
+    "summarized_at": "2026-05-11T15:59:46+00:00",
+    "summary": {
+      "channel_relationship": "AssemblyAI is a developer platform focused on enhancing language models for practical applications.",
+      "claims": [
+        "Global language support is crucial for companies operating in lower resource languages."
+      ],
+      "evidence_snippets": [
+        "the most exciting thing is like global language support across all languages (0:10)",
+        "we hope that someone will crack the nut of like solving transcription for low resource languages (0:50)"
+      ],
+      "speaker": "AssemblyAI",
+      "stance": "optimistic",
+      "summary": "The video discusses the importance of global language support in large language models, particularly for lower resource languages. AssemblyAI emphasizes the need for effective transcription solutions to cater to diverse user bases.",
+      "summary_provider": "openai/gpt-4o-mini",
+      "tools_models_mentioned": [
+        "LLMs",
+        "transcription tools"
+      ],
+      "topics": [
+        "model releases",
+        "research papers",
+        "enterprise adoption"
+      ]
+    },
+    "summary_status": "complete",
     "title": "Into the Future: Better Language Support 🌍",
-    "transcript_status": "transcript_unavailable",
+    "transcript_characters": 764,
+    "transcript_checked_at": "2026-05-11T15:59:40+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
     "updated_at": "2026-05-11T07:45:26+00:00",
     "url": "https://www.youtube.com/watch?v=BFu7YI_Y30w",
     "video_id": "BFu7YI_Y30w"
@@ -287,11 +308,37 @@
     "first_seen_at": "2026-05-11T14:30:48+00:00",
     "published_at": "2026-05-11T04:00:46+00:00",
     "relationship": "developer platform",
-    "summarized_at": "2026-05-11T15:15:56+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=X4SsMaK5HlI! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
-    "summary_status": "failed",
+    "summarized_at": "2026-05-11T15:59:53+00:00",
+    "summary": {
+      "channel_relationship": "AssemblyAI is a developer platform that provides tools for integrating AI and transcription technologies, aligning with other LLM channels focused on practical applications.",
+      "claims": [
+        "Real-time transcription can enhance stakeholder involvement during research calls.",
+        "AI moderation can enable fully autonomous interviews using speech-to-text and text-to-speech pipelines."
+      ],
+      "evidence_snippets": [
+        "providing a backroom for clients to... get transcription of what's going on (0:15)",
+        "using real-time transcription to actually help support the moderators (0:45)",
+        "AI moderation getting an AI interviewer going... conducting interviews fully autonomously (1:10)"
+      ],
+      "speaker": "AssemblyAI",
+      "stance": "optimistic",
+      "summary": "The video discusses three use cases for real-time transcription in research and interviews, emphasizing its potential to enhance stakeholder engagement and support moderators. It also explores the concept of AI moderation for conducting interviews autonomously.",
+      "summary_provider": "openai/gpt-4o-mini",
+      "tools_models_mentioned": [
+        "real-time transcription",
+        "AI moderation"
+      ],
+      "topics": [
+        "enterprise adoption",
+        "tooling"
+      ]
+    },
+    "summary_status": "complete",
     "title": "3 Product Use Cases for Real-time (CoLoop) ⚡️",
-    "transcript_status": "transcript_unavailable",
+    "transcript_characters": 1561,
+    "transcript_checked_at": "2026-05-11T15:59:48+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
     "updated_at": "2026-05-11T07:18:01+00:00",
     "url": "https://www.youtube.com/watch?v=X4SsMaK5HlI",
     "video_id": "X4SsMaK5HlI"
@@ -310,11 +357,36 @@
     "first_seen_at": "2026-05-11T14:30:48+00:00",
     "published_at": "2026-05-11T03:57:57+00:00",
     "relationship": "developer platform",
-    "summarized_at": "2026-05-11T15:15:59+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=JihZT9IVX0g! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
-    "summary_status": "failed",
+    "summarized_at": "2026-05-11T16:00:20+00:00",
+    "summary": {
+      "channel_relationship": "AssemblyAI is a developer platform that provides tools for building applications, including those utilizing large language models.",
+      "claims": [
+        "Real-time transcription is challenging due to legacy systems and integration issues."
+      ],
+      "evidence_snippets": [
+        "We haven't really gone there... this is like a complex mess of horrible integrations to APIs on old legacy call systems. (0:00-0:30)",
+        "For us the real time is is more around we call it near time. (0:45-1:00)"
+      ],
+      "speaker": "AssemblyAI",
+      "stance": "descriptive",
+      "summary": "The video discusses the challenges of implementing real-time transcription in contact centers due to legacy systems. It highlights the importance of quick access to transcripts for analyzing call trends and responding to unusual patterns.",
+      "summary_provider": "openai/gpt-4o-mini",
+      "tools_models_mentioned": [
+        "transcription APIs",
+        "legacy call systems"
+      ],
+      "topics": [
+        "agents",
+        "tooling",
+        "enterprise adoption"
+      ]
+    },
+    "summary_status": "complete",
     "title": "Real-Time vs Post-Call: Behind EdgeTier's Architecture 💡",
-    "transcript_status": "transcript_unavailable",
+    "transcript_characters": 2202,
+    "transcript_checked_at": "2026-05-11T16:00:14+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
     "updated_at": "2026-05-11T06:47:58+00:00",
     "url": "https://www.youtube.com/watch?v=JihZT9IVX0g",
     "video_id": "JihZT9IVX0g"
@@ -333,11 +405,37 @@
     "first_seen_at": "2026-05-11T14:30:47+00:00",
     "published_at": "2026-05-10T11:00:47+00:00",
     "relationship": "enterprise explainer",
-    "summarized_at": "2026-05-11T15:16:01+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=V_qJIrvWyRQ! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
-    "summary_status": "failed",
+    "summarized_at": "2026-05-11T16:00:28+00:00",
+    "summary": {
+      "channel_relationship": "IBM Technology provides enterprise-focused explanations of AI concepts, differentiating from more general LLM channels.",
+      "claims": [
+        "Agentic consent is essential for scaling AI responsibly.",
+        "Agentic consent is a living contract between humans and machines."
+      ],
+      "evidence_snippets": [
+        "Agentic consent defines who delegated the authority, what actions are permitted, and the scope and lifetime of that delegation.",
+        "Agentic consent is not a one-time or static approval or clicking a checkbox."
+      ],
+      "speaker": "IBM Technology",
+      "stance": "optimistic",
+      "summary": "The video explains the concept of agentic consent, emphasizing its importance in ensuring that AI agents operate safely and responsibly. It highlights the need for dynamic and context-aware consent mechanisms that adapt to changing scenarios, ensuring that agents act in alignment with user intentions.",
+      "summary_provider": "openai/gpt-4o-mini",
+      "tools_models_mentioned": [
+        "AI agents",
+        "MCP server"
+      ],
+      "topics": [
+        "agents",
+        "safety",
+        "enterprise adoption"
+      ]
+    },
+    "summary_status": "complete",
     "title": "Agentic Consent Explained: How AI Agents Act Safely and Responsibly",
-    "transcript_status": "transcript_unavailable",
+    "transcript_characters": 11229,
+    "transcript_checked_at": "2026-05-11T16:00:22+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
     "updated_at": "2026-05-10T11:01:22+00:00",
     "url": "https://www.youtube.com/watch?v=V_qJIrvWyRQ",
     "video_id": "V_qJIrvWyRQ"
@@ -356,11 +454,34 @@
     "first_seen_at": "2026-05-11T14:30:45+00:00",
     "published_at": "2026-05-09T18:57:28+00:00",
     "relationship": "tool/news curator",
-    "summarized_at": "2026-05-11T15:16:03+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=b8V8bDmc8oQ! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
-    "summary_status": "failed",
+    "summarized_at": "2026-05-11T16:00:35+00:00",
+    "summary": {
+      "channel_relationship": "tool/news curator",
+      "claims": [
+        "OpenAI released pets inside of Codex, which are characters that live in the platform."
+      ],
+      "evidence_snippets": [
+        "OpenAI released pets inside of Codeex... it's this little like cloud robot character... you can customize what you want your pet to look like."
+      ],
+      "speaker": "Matt Wolfe",
+      "stance": "optimistic",
+      "summary": "Matt Wolfe discusses the new 'AI Pets' feature in OpenAI's Codex, highlighting its customization options and the community aspect of pet creation. He expresses enthusiasm about the innovative capabilities of Codex.",
+      "summary_provider": "openai/gpt-4o-mini",
+      "tools_models_mentioned": [
+        "Codex",
+        "OpenAI"
+      ],
+      "topics": [
+        "model releases",
+        "tooling"
+      ]
+    },
+    "summary_status": "complete",
     "title": "Codex Now Has \"AI Pets\"",
-    "transcript_status": "transcript_unavailable",
+    "transcript_characters": 1100,
+    "transcript_checked_at": "2026-05-11T16:00:30+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
     "updated_at": "2026-05-10T19:18:37+00:00",
     "url": "https://www.youtube.com/watch?v=b8V8bDmc8oQ",
     "video_id": "b8V8bDmc8oQ"
@@ -379,32 +500,32 @@
     "first_seen_at": "2026-05-11T14:20:46+00:00",
     "published_at": "2026-05-08T21:57:20+00:00",
     "relationship": "education",
-    "summarized_at": "2026-05-11T14:21:53+00:00",
+    "summarized_at": "2026-05-11T16:00:41+00:00",
     "summary": {
       "channel_relationship": "education",
-      "claims": [],
-      "evidence_snippets": [],
-      "provider_error": "GITHUB_TOKEN is not set",
+      "claims": [
+        "Vibe coding can lead to incorrect outputs despite user confidence."
+      ],
+      "evidence_snippets": [
+        "Vibe coding be all like create me a button. Okay, boss. Make it green and big. Got it. Here's a big button. Seriously? This is so wrong."
+      ],
       "speaker": "DeepLearning.AI",
-      "stance": "descriptive",
-      "summary": "DeepLearning.AI discusses LLM tooling in a transcript-backed video titled \"Vibe coding works… until your agent confidently builds the wrong thing\".",
-      "summary_provider": "local-heuristic",
+      "stance": "skeptical",
+      "summary": "The video discusses the limitations of Vibe coding in large language models, highlighting how agents can misinterpret user instructions. It emphasizes the importance of driven development to avoid such errors.",
+      "summary_provider": "openai/gpt-4o-mini",
       "tools_models_mentioned": [
-        "Here",
-        "Vibe",
-        "Okay",
-        "Make",
-        "Got",
-        "Seriously"
+        "LLMs"
       ],
       "topics": [
+        "agents",
+        "coding",
         "tooling"
       ]
     },
     "summary_status": "complete",
     "title": "Vibe coding works… until your agent confidently builds the wrong thing",
     "transcript_characters": 235,
-    "transcript_checked_at": "2026-05-11T14:21:53+00:00",
+    "transcript_checked_at": "2026-05-11T16:00:36+00:00",
     "transcript_provider": "youtube-transcript-api",
     "transcript_status": "available",
     "updated_at": "2026-05-09T10:46:52+00:00",
@@ -424,45 +545,40 @@
     "first_seen_at": "2026-05-11T14:20:31+00:00",
     "published_at": "2026-05-08T16:46:30+00:00",
     "relationship": "research explainer",
-    "summarized_at": "2026-05-11T14:22:06+00:00",
+    "summarized_at": "2026-05-11T16:00:49+00:00",
     "summary": {
-      "channel_relationship": "research explainer",
+      "channel_relationship": "Two Minute Papers provides research explanations that complement other LLM channels by breaking down complex topics into digestible insights.",
       "claims": [
-        "Everyone is talking about Frontier Chad GPT models that do all the thinking and the brilliant rocket science stuff.",
-        "But the instant version, this is actually what hundreds of millions of people around the globe use.",
-        "It's what grandma uses when asking about medication.",
-        "And we are going to talk about the good, the bad, and the insane."
+        "Hallucination rates on medical legal areas cut roughly in half.",
+        "The new model approaches the most powerful models in the world on some tasks.",
+        "The model's cyber security capabilities beat the previous generation.",
+        "The model is more vulnerable to multi-turn adversarial prompting."
       ],
       "evidence_snippets": [
-        "Everyone is talking about Frontier Chad GPT models that do all the thinking and the brilliant rocket science stuff.",
-        "But the instant version, this is actually what hundreds of millions of people around the globe use.",
-        "It's what grandma uses when asking about medication."
+        "Hallucination rates on medical legal areas cut roughly in half. (timestamp hint)",
+        "This is the first instant system that got so smart it actually approaches the most powerful models. (timestamp hint)",
+        "Its cyber security capabilities are perhaps even more stunning. (timestamp hint)",
+        "The refuser is roughly cut in half against multi-turn role-playing kind of adversarial prompting. (timestamp hint)"
       ],
-      "provider_error": "GITHUB_TOKEN is not set",
       "speaker": "Two Minute Papers",
-      "stance": "descriptive",
-      "summary": "Two Minute Papers discusses model releases, RAG, evals in a transcript-backed video titled \"OpenAI's ChatGPT 5.5 Instant: The Good, The Bad And The Insane\".",
-      "summary_provider": "local-heuristic",
+      "stance": "mixed",
+      "summary": "The video discusses the advancements and challenges of OpenAI's ChatGPT 5.5, highlighting its impressive performance in various benchmarks while also addressing vulnerabilities in its safety mechanisms. The host emphasizes the importance of instant models in providing quick and valuable information.",
+      "summary_provider": "openai/gpt-4o-mini",
       "tools_models_mentioned": [
-        "And",
-        "Well",
-        "GPT",
-        "But",
-        "Okay",
-        "Here"
+        "ChatGPT 5.5",
+        "OpenAI",
+        "Deepseek AI"
       ],
       "topics": [
         "model releases",
-        "RAG",
-        "evals",
-        "research papers",
-        "tooling"
+        "safety",
+        "research papers"
       ]
     },
     "summary_status": "complete",
     "title": "OpenAI's ChatGPT 5.5 Instant: The Good, The Bad And The Insane",
     "transcript_characters": 6488,
-    "transcript_checked_at": "2026-05-11T14:22:06+00:00",
+    "transcript_checked_at": "2026-05-11T16:00:43+00:00",
     "transcript_provider": "youtube-transcript-api",
     "transcript_status": "available",
     "updated_at": "2026-05-10T17:34:31+00:00",
@@ -483,45 +599,37 @@
     "first_seen_at": "2026-05-11T14:20:39+00:00",
     "published_at": "2026-05-08T16:13:15+00:00",
     "relationship": "applied workflow educator",
-    "summarized_at": "2026-05-11T14:22:08+00:00",
+    "summarized_at": "2026-05-11T16:00:57+00:00",
     "summary": {
-      "channel_relationship": "applied workflow educator",
+      "channel_relationship": "The AI Advantage serves as an applied workflow educator, providing practical insights into AI tools and models.",
       "claims": [
-        "Well, I guess it is a new model, but more importantly, it's how you're supposed to interact with Chat GPT's new main model shifted.",
-        "Basically, instead of being super detailed, they now recommend you prompt for results.",
-        "So, what that exactly means and how the results differ from what you might have experienced last week.",
-        "And also, they claim that hallucinations were reduced by over 50%."
+        "Hallucinations were reduced by over 50%.",
+        "The new GPT 5.5 model works better with shorter, outcome-first prompts."
       ],
       "evidence_snippets": [
-        "Well, I guess it is a new model, but more importantly, it's how you're supposed to interact with Chat GPT's new main model shifted.",
-        "Basically, instead of being super detailed, they now recommend you prompt for results.",
-        "So, what that exactly means and how the results differ from what you might have experienced last week."
+        "they claim that hallucinations were reduced by over 50% (timestamp hint: around 10:00)",
+        "it's just such a good habit to get into, you know, give it some info on you, give it what you want to do, and then tell it what good looks like (timestamp hint: around 15:00)"
       ],
-      "provider_error": "GITHUB_TOKEN is not set",
       "speaker": "The AI Advantage",
-      "stance": "descriptive",
-      "summary": "The AI Advantage discusses model releases, agents, RAG in a transcript-backed video titled \"New ChatGPT Model & Memory Features Explained (AI News You Can Use)\".",
-      "summary_provider": "local-heuristic",
+      "stance": "optimistic",
+      "summary": "The video discusses the new features of the ChatGPT 5.5 model, emphasizing a shift towards simpler, outcome-oriented prompting to enhance user experience. It also highlights significant improvements in reducing hallucinations and the introduction of memory features that enhance personalization.",
+      "summary_provider": "openai/gpt-4o-mini",
       "tools_models_mentioned": [
-        "And",
-        "GPT",
-        "Now",
-        "That",
-        "You",
-        "OpenAI"
+        "ChatGPT",
+        "GPT 5.5",
+        "Claude",
+        "XAI"
       ],
       "topics": [
         "model releases",
-        "agents",
-        "RAG",
-        "evals",
-        "coding"
+        "safety",
+        "enterprise adoption"
       ]
     },
     "summary_status": "complete",
     "title": "New ChatGPT Model & Memory Features Explained (AI News You Can Use)",
     "transcript_characters": 14187,
-    "transcript_checked_at": "2026-05-11T14:22:08+00:00",
+    "transcript_checked_at": "2026-05-11T16:00:51+00:00",
     "transcript_provider": "youtube-transcript-api",
     "transcript_status": "available",
     "updated_at": "2026-05-11T13:30:17+00:00",
@@ -542,11 +650,40 @@
     "first_seen_at": "2026-05-11T14:30:45+00:00",
     "published_at": "2026-05-08T15:00:27+00:00",
     "relationship": "tool/news curator",
-    "summarized_at": "2026-05-11T15:16:06+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=SXneZ3bRKO4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
-    "summary_status": "failed",
+    "summarized_at": "2026-05-11T16:01:07+00:00",
+    "summary": {
+      "channel_relationship": "Matt Wolfe's channel serves as a tool and news curator, providing insights into AI developments and practical applications.",
+      "claims": [
+        "GPT 5.5 Instant is OpenAI's new default model in ChatGPT, offering minor improvements over GPT 5.3.",
+        "The new voice models, including GPT Realtime 2, are currently only available in the API.",
+        "Anthropic has signed a compute deal with SpaceX to increase Claude's capacity."
+      ],
+      "evidence_snippets": [
+        "GPT 5.5 Instant is more concise and tailored to users, but not a groundbreaking model. (0:30)",
+        "The new voice models are impressive but not yet available in ChatGPT. (12:00)",
+        "Claude's new compute deal with SpaceX aims to lift usage limits. (45:00)"
+      ],
+      "speaker": "Matt Wolfe",
+      "stance": "mixed",
+      "summary": "In this video, Matt Wolfe discusses the latest updates from OpenAI, including the release of GPT 5.5 Instant and new voice models. He also highlights Anthropic's partnership with SpaceX to enhance Claude's capabilities, indicating a competitive landscape in AI development.",
+      "summary_provider": "openai/gpt-4o-mini",
+      "tools_models_mentioned": [
+        "GPT 5.5 Instant",
+        "GPT Realtime 2",
+        "Claude"
+      ],
+      "topics": [
+        "model releases",
+        "tooling",
+        "enterprise adoption"
+      ]
+    },
+    "summary_status": "complete",
     "title": "AI News: OpenAI Absolutely Cooked This Week!",
-    "transcript_status": "transcript_unavailable",
+    "transcript_characters": 37919,
+    "transcript_checked_at": "2026-05-11T16:00:59+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
     "updated_at": "2026-05-09T11:11:23+00:00",
     "url": "https://www.youtube.com/watch?v=SXneZ3bRKO4",
     "video_id": "SXneZ3bRKO4"
@@ -565,11 +702,39 @@
     "first_seen_at": "2026-05-11T14:30:47+00:00",
     "published_at": "2026-05-08T10:01:03+00:00",
     "relationship": "enterprise explainer",
-    "summarized_at": "2026-05-11T15:16:09+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=YHKXflgkHak! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
-    "summary_status": "failed",
+    "summarized_at": "2026-05-11T16:01:14+00:00",
+    "summary": {
+      "channel_relationship": "IBM Technology serves as an enterprise explainer, providing insights into AI applications and trends relevant to business leaders.",
+      "claims": [
+        "AI is being integrated in a way that drives productivity end-to-end.",
+        "The maturity of AI tools is allowing for cohesive processes across organizations."
+      ],
+      "evidence_snippets": [
+        "There's a lot of excitement about seeing IBM integrate AI in a way that really drives productivity end-to-end.",
+        "We're seeing some landmark improvements in terms of how those coding agents are changing over time.",
+        "The extent of executive AI literacy and personal use will drive that organization's AI speed."
+      ],
+      "speaker": "Tim Hwang",
+      "stance": "optimistic",
+      "summary": "The discussion at IBM Think 2026 highlights the growing maturity of AI tools and their integration into business processes, emphasizing the importance of executive literacy in AI. The speakers express optimism about AI's potential to enhance productivity and transform organizational operations.",
+      "summary_provider": "openai/gpt-4o-mini",
+      "tools_models_mentioned": [
+        "Bob",
+        "AI agents",
+        "IBM automation products"
+      ],
+      "topics": [
+        "enterprise adoption",
+        "coding",
+        "safety"
+      ]
+    },
+    "summary_status": "complete",
     "title": "Live from Think 2026: AI operating model, VC funding & CAIO evolution",
-    "transcript_status": "transcript_unavailable",
+    "transcript_characters": 31683,
+    "transcript_checked_at": "2026-05-11T16:01:09+00:00",
+    "transcript_provider": "youtube-transcript-api",
+    "transcript_status": "available",
     "updated_at": "2026-05-08T10:01:22+00:00",
     "url": "https://www.youtube.com/watch?v=YHKXflgkHak",
     "video_id": "YHKXflgkHak"
@@ -588,8 +753,8 @@
     "first_seen_at": "2026-05-11T14:30:48+00:00",
     "published_at": "2026-05-07T14:01:28+00:00",
     "relationship": "framework/vendor",
-    "summarized_at": "2026-05-11T15:16:12+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=trEM9OKr5Sc! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summarized_at": "2026-05-11T16:01:21+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=trEM9OKr5Sc! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th",
     "summary_status": "failed",
     "title": "How Ramp built an AI agent that can think outside of tokens | Alex Shevchenko",
     "transcript_status": "transcript_unavailable",
@@ -611,8 +776,8 @@
     "first_seen_at": "2026-05-11T14:30:47+00:00",
     "published_at": "2026-05-07T11:00:58+00:00",
     "relationship": "enterprise explainer",
-    "summarized_at": "2026-05-11T15:16:15+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=ZrHKwxasXS4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summarized_at": "2026-05-11T16:01:26+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=ZrHKwxasXS4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th",
     "summary_status": "failed",
     "title": "The Rise of Crypto Agility: How to Secure Systems for the Quantum Era",
     "transcript_status": "transcript_unavailable",
@@ -634,8 +799,8 @@
     "first_seen_at": "2026-05-11T14:30:45+00:00",
     "published_at": "2026-05-06T19:00:00+00:00",
     "relationship": "tool/news curator",
-    "summarized_at": "2026-05-11T15:16:17+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=z7EE9VWKrCA! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summarized_at": "2026-05-11T16:01:32+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=z7EE9VWKrCA! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th",
     "summary_status": "failed",
     "title": "Your AI Setup Needs This",
     "transcript_status": "transcript_unavailable",
@@ -657,8 +822,8 @@
     "first_seen_at": "2026-05-11T14:30:45+00:00",
     "published_at": "2026-05-06T18:19:41+00:00",
     "relationship": "tool/news curator",
-    "summarized_at": "2026-05-11T15:16:19+00:00",
-    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=yke4fLQUsh4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summarized_at": "2026-05-11T16:01:37+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=yke4fLQUsh4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th",
     "summary_status": "failed",
     "title": "Build A Second Brain That Remembers Everything",
     "transcript_status": "transcript_unavailable",

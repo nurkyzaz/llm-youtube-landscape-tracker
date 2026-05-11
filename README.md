@@ -2,8 +2,9 @@
 
 An automated, zero-cost tracker for popular YouTube channels discussing large
 language models. The pipeline watches YouTube RSS feeds, extracts captions,
-summarizes transcript-backed claims with GitHub Models, and publishes a static
-site through GitHub Pages.
+summarizes transcript-backed claims with GitHub Models when available, falls
+back to a transcript-grounded heuristic when needed, and publishes a static site
+through GitHub Pages.
 
 The published frontend is a React prototype wired to live generated data. The
 Python backend writes `site/data.js`, and the browser UI renders the searchable

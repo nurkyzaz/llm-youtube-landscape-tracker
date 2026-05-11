@@ -1,5 +1,5 @@
 
-/* /home/runner/work/llm-youtube-landscape-tracker/llm-youtube-landscape-tracker/site/tweaks-panel.jsx */
+/* /Users/nurkyz/Desktop/tadreamk/site/tweaks-panel.jsx */
 (function(){
 const __TWEAKS_STYLE = `
   .twk-panel{position:fixed;right:16px;bottom:16px;z-index:2147483646;width:280px;
@@ -591,7 +591,7 @@ Object.assign(window, {
 })();
 
 
-/* /home/runner/work/llm-youtube-landscape-tracker/llm-youtube-landscape-tracker/site/ui.jsx */
+/* /Users/nurkyz/Desktop/tadreamk/site/ui.jsx */
 (function(){
 const {
   useState,
@@ -711,6 +711,12 @@ function RefreshBadge({
 }) {
   const updated = meta?.lastUpdated || "not run yet";
   const warning = meta?.warning;
+  const updatedLabel = updated === "not run yet" ? updated : new Date(updated).toLocaleString([], {
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit"
+  });
   return React.createElement("div", {
     style: {
       background: "var(--bg-card)",
@@ -752,7 +758,7 @@ function RefreshBadge({
       fontFamily: "var(--mono)",
       whiteSpace: "nowrap"
     }
-  }, updated)), React.createElement("div", {
+  }, updatedLabel)), React.createElement("div", {
     style: {
       display: "grid",
       gridTemplateColumns: "1fr 1fr",
@@ -1770,7 +1776,7 @@ Object.assign(window, {
 })();
 
 
-/* /home/runner/work/llm-youtube-landscape-tracker/llm-youtube-landscape-tracker/site/app.jsx */
+/* /Users/nurkyz/Desktop/tadreamk/site/app.jsx */
 (function(){
 const {
   useState,

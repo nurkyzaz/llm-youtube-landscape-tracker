@@ -89,5 +89,23 @@
     "stage": "summarize",
     "timestamp": "2026-05-11T15:49:44+00:00",
     "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; skipping hosted transcript fetch because YouTube blocks many cloud-runner IPs."
+  },
+  {
+    "attempted": 7,
+    "completed": 7,
+    "failed": 0,
+    "proxy_configured": false,
+    "stage": "summarize",
+    "timestamp": "2026-05-11T15:59:54+00:00",
+    "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; GitHub-hosted runners may be blocked by YouTube."
+  },
+  {
+    "attempted": 12,
+    "completed": 8,
+    "failed": 4,
+    "proxy_configured": false,
+    "stage": "summarize",
+    "timestamp": "2026-05-11T16:01:37+00:00",
+    "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; GitHub-hosted runners may be blocked by YouTube."
   }
 ]

@@ -60,6 +60,12 @@ function Header({ meta, counts }) {
 function RefreshBadge({ meta, counts }) {
   const updated = meta?.lastUpdated || "not run yet";
   const warning = meta?.warning;
+  const updatedLabel = updated === "not run yet" ? updated : new Date(updated).toLocaleString([], {
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
   return (
     <div style={{
       background: "var(--bg-card)", border: "1px solid var(--rule-soft)",
@@ -75,7 +81,7 @@ function RefreshBadge({ meta, counts }) {
           Last updated
         </span>
         <span style={{ fontSize: 12, color: "var(--ink-mute)", fontFamily: "var(--mono)", whiteSpace: "nowrap" }}>
-          {updated}
+          {updatedLabel}
         </span>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
