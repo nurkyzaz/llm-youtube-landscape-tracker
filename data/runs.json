@@ -72,5 +72,22 @@
     "failed": 12,
     "stage": "summarize",
     "timestamp": "2026-05-11T15:16:19+00:00"
+  },
+  {
+    "channels": 10,
+    "failures": [],
+    "fetched": 50,
+    "new_videos": 0,
+    "stage": "ingest",
+    "timestamp": "2026-05-11T15:49:44+00:00"
+  },
+  {
+    "attempted": 0,
+    "completed": 0,
+    "failed": 0,
+    "proxy_configured": false,
+    "stage": "summarize",
+    "timestamp": "2026-05-11T15:49:44+00:00",
+    "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; skipping hosted transcript fetch because YouTube blocks many cloud-runner IPs."
   }
 ]
