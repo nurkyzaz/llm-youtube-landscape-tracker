@@ -7,7 +7,7 @@ site through GitHub Pages.
 
 The published frontend is a React prototype wired to live generated data. The
 Python backend writes `site/data.js`, and the browser UI renders the searchable
-table, topic heatmap, channel relationship graph, and transcript evidence panel.
+table, topic heatmap, pipeline log, and transcript evidence panel.
 
 ## Quick Start
 

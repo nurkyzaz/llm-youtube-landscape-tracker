@@ -150,7 +150,6 @@ The site includes:
 - a landscape table of videos
 - a searchable/filterable React UI
 - a topic coverage heatmap
-- a channel relationship graph
 - who is speaking
 - topics covered
 - transcript-backed claims

@@ -566,72 +566,6 @@ function Heatmap({ channels, topics, matrix, onCellClick }) {
   );
 }
 
-// ────────────────────────────────────────── relationship graph ──────
-function RelationshipGraph({ channels, topics, matrix }) {
-  const pairs = useMemo(() => {
-    const out = [];
-    for (let i = 0; i < channels.length; i++) {
-      for (let j = i + 1; j < channels.length; j++) {
-        const a = channels[i], b = channels[j];
-        let dot = 0, na = 0, nb = 0;
-        for (const t of topics) {
-          const va = matrix[a.id][t], vb = matrix[b.id][t];
-          dot += va * vb; na += va * va; nb += vb * vb;
-        }
-        const sim = (na && nb) ? dot / Math.sqrt(na * nb) : 0;
-        out.push({ a: a.id, b: b.id, sim });
-      }
-    }
-    return out.sort((x, y) => y.sim - x.sim);
-  }, [channels, topics, matrix]);
-
-  const R = 200, cx = 360, cy = 240;
-  const positions = useMemo(() => {
-    const pos = {};
-    channels.forEach((c, i) => {
-      const a = (i / channels.length) * Math.PI * 2 - Math.PI / 2;
-      pos[c.id] = { x: cx + R * Math.cos(a), y: cy + R * Math.sin(a) };
-    });
-    return pos;
-  }, [channels]);
-
-  const top = pairs.filter(p => p.sim > 0.45);
-
-  return (
-    <div style={{ padding: "36px 48px 48px" }}>
-      <div style={{ marginBottom: 24, maxWidth: 720 }}>
-        <h2 style={{ margin: 0, fontSize: 36, fontWeight: 800, lineHeight: 1.1, letterSpacing: "-.025em", color: "var(--ink)" }}>Channel relationships</h2>
-        <p style={{ margin: "10px 0 0", color: "var(--ink-mute)", fontSize: 15.5, lineHeight: 1.5, fontWeight: 500 }}>
-          Channels connected by overlap in topic coverage. Thicker lines mean stronger overlap.
-        </p>
-      </div>
-      <div style={{ background: "var(--bg-card)", borderRadius: 16, padding: 20, border: "1px solid var(--rule-soft)" }}>
-        <svg viewBox="0 0 720 480" style={{ width: "100%", maxWidth: 820, display: "block", margin: "0 auto" }}>
-          {top.map((p, i) => {
-            const A = positions[p.a], B = positions[p.b];
-            return (
-              <line key={i} x1={A.x} y1={A.y} x2={B.x} y2={B.y}
-                stroke="var(--accent)" opacity={0.15 + p.sim * 0.5}
-                strokeWidth={1 + p.sim * 3} strokeLinecap="round" />
-            );
-          })}
-          {channels.map(c => {
-            const { x, y } = positions[c.id];
-            return (
-              <g key={c.id}>
-                <rect x={x - 20} y={y - 20} width={40} height={40} rx={10}
-                  fill="var(--ink)" />
-                <text x={x} y={y} dy="0.36em" textAnchor="middle" fontFamily="var(--sans)" fontSize="16" fontWeight="800" fill="var(--bg)">{c.id}</text>
-                <text x={x} y={y + 38} textAnchor="middle" fontFamily="var(--sans)" fontSize="12" fontWeight="600" fill="var(--ink-mute)">{c.name}</text>
-              </g>
-            );
-          })}
-        </svg>
-      </div>
-    </div>
-  );
-}
-
 // ────────────────────────────────────────────── ingestion log ───────
 function IngestionLog({ entries }) {
   return (
@@ -673,7 +607,6 @@ function ViewTabs({ view, setView }) {
   const tabs = [
     ["table", "Videos"],
     ["heatmap", "Topic coverage"],
-    ["graph", "Relationships"],
     ["log", "Pipeline"],
   ];
   return (
@@ -701,6 +634,6 @@ function ViewTabs({ view, setView }) {
 }
 
 Object.assign(window, {
-  Header, FilterBar, VideosTable, VideoPanel, Heatmap, RelationshipGraph,
+  Header, FilterBar, VideosTable, VideoPanel, Heatmap,
   IngestionLog, ViewTabs, fmt,
 });

@@ -86,10 +86,6 @@ function App() {
           onCellClick={(channel, topic) => { setView("table"); setFilters({ ...filters, channel, topic }); }} />
       )}
 
-      {view === "graph" && (
-        <RelationshipGraph channels={CHANNELS} topics={TOPICS} matrix={MATRIX} />
-      )}
-
       {view === "log" && (
         <IngestionLog entries={INGEST_LOG} />
       )}
