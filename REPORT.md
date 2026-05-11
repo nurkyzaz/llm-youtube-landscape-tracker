@@ -105,6 +105,14 @@ Another issue appeared locally: `pip --user` installed `yt-dlp` into a directory
 that was not on `PATH`. I updated the code to also check the Python user binary
 directory, so the fallback can still work.
 
+After the first GitHub Actions runs, I found a production-only problem: RSS
+ingestion worked, but caption fetching failed from GitHub-hosted runners because
+YouTube blocks many cloud-provider IP ranges. I wired
+`youtube-transcript-api` to `WebshareProxyConfig` when `WEBSHARE_USER` and
+`WEBSHARE_PASS` repository secrets are present. The workflow now passes those
+secrets into the summarization step, and missing secrets are recorded as a
+visible warning in the generated site metadata.
+
 ### 6. Built Transcript-Backed Summaries
 
 I created `scripts/summarize.py`.
@@ -123,8 +131,10 @@ JSON summary with these fields:
 
 For local development, there may be no `GITHUB_TOKEN` with model access. To make
 the project still testable without paid services, I added a deterministic local
-heuristic fallback. The fallback uses transcript text to identify topic keywords,
-claims, evidence snippets, and mentioned tools/models.
+heuristic fallback. The first fallback was too weak because it used a templated
+summary and capitalized-word extraction. I replaced it with extractive sentence
+scoring and a curated model/tool allowlist, so degraded-mode summaries still use
+content-bearing transcript sentences rather than just title text.
 
 This means the pipeline can always build a useful table, while GitHub Actions can
 use the stronger AI summarizer when GitHub Models is available.
@@ -144,6 +154,7 @@ The current frontend uses:
 - `site/ui.jsx`
 - `site/tweaks-panel.jsx`
 - `site/data.js`
+- `site/assets/app.js`
 
 The site includes:
 
@@ -154,7 +165,6 @@ The site includes:
 - topics covered
 - transcript-backed claims
 - tools and models mentioned
-- channel relationships
 - transcript and summary status
 - short evidence snippets
 - update logs
@@ -162,6 +172,12 @@ The site includes:
 
 The backend writes `site/data.js` in the frontend's expected shape, so the
 browser interface is connected to the real watcher output rather than mock data.
+The React frontend is prebuilt into `site/assets/app.js`; the deployed page no
+longer ships development React or in-browser Babel.
+
+I also removed the misleading "live" animation. The header now shows the actual
+last pipeline update timestamp from generated metadata. The site updates when
+GitHub Actions commits new data and deploys GitHub Pages.
 
 The site intentionally does not publish full transcripts. It only publishes
 summaries, short snippets, timestamps/status metadata, and source links.
@@ -176,8 +192,9 @@ The workflow runs every day and can also be started manually. It performs:
 2. Run ingestion.
 3. Summarize pending transcript-backed videos.
 4. Build the static site.
-5. Commit updated `data/` and `site/` files.
-6. Deploy the site to GitHub Pages.
+5. Build the frontend bundle.
+6. Commit updated `data/` and `site/` files.
+7. Deploy the site to GitHub Pages.
 
 The workflow uses these permissions:
 
@@ -194,13 +211,16 @@ The tests check:
 
 - RSS fixture parsing.
 - Merging new videos without losing previous summaries.
-- Summary schema validation.
-- Static site generation.
+- Webshare proxy configuration.
+- GitHub Models response parsing.
+- Extractive fallback summary quality.
+- Static site data generation.
+- Frontend data shape.
 
 The tests passed locally:
 
 ```text
-Ran 4 tests
+Ran 7 tests
 OK
 ```
 
@@ -273,20 +293,22 @@ I evaluated the project in these ways:
 The current implementation produced these results:
 
 - 10 configured YouTube channels.
-- 10 recent videos ingested during the first local live run.
+- 50 recent videos ingested after scheduled/manual runs.
 - 7 transcript-backed summaries generated locally.
 - GitHub repository created and pushed successfully.
 - GitHub Pages enabled.
 - The scheduled/manual workflow completed successfully.
+- The production workflow is now wired for Webshare proxy credentials, which are
+  required for GitHub-hosted runners to fetch captions reliably.
 
 The generated table shows which creator/channel is speaking, what LLM topics are
-covered, the transcript-backed summary, claims, evidence snippets, and how the
-channel relates to the rest of the LLM YouTube landscape.
+covered, the transcript-backed summary, claims, and evidence snippets.
 
 ## Limitations
 
 - Some videos do not have captions immediately, so they are retried later.
-- YouTube may rate-limit transcript extraction.
+- YouTube may rate-limit or block transcript extraction from cloud IP ranges; the
+  production workflow expects Webshare proxy secrets.
 - GitHub Models can be rate-limited or unavailable depending on repository
   access and GitHub account settings.
 - Speaker and guest detection is best-effort.

@@ -1,60 +1,70 @@
 [
   {
     "name": "Matt Wolfe",
+    "channel_id": "UChpleBmo18P08aKCIgti38g",
     "url": "https://www.youtube.com/@mreflow",
     "relationship": "tool/news curator",
     "focus": ["AI tools", "model releases", "creator workflows", "industry news"]
   },
   {
     "name": "Two Minute Papers",
+    "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
     "url": "https://www.youtube.com/@TwoMinutePapers",
     "relationship": "research explainer",
     "focus": ["research papers", "model capabilities", "multimodal AI"]
   },
   {
     "name": "Yannic Kilcher",
+    "channel_id": "UCZHmQk67mSJgfCCTn7xBfew",
     "url": "https://www.youtube.com/@YannicKilcher",
     "relationship": "research analyst",
     "focus": ["papers", "open models", "training", "alignment"]
   },
   {
     "name": "Andrej Karpathy",
+    "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
     "url": "https://www.youtube.com/@AndrejKarpathy",
     "relationship": "education",
     "focus": ["LLM internals", "transformers", "coding", "deep learning"]
   },
   {
     "name": "AI Explained",
+    "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
     "url": "https://www.youtube.com/@aiexplained-official",
     "relationship": "frontier-model analyst",
     "focus": ["model releases", "benchmarks", "capabilities", "safety"]
   },
   {
     "name": "The AI Advantage",
+    "channel_id": "UCHhYXsLBEVVnbvsq57n1MTQ",
     "url": "https://www.youtube.com/@aiadvantage",
     "relationship": "applied workflow educator",
     "focus": ["productivity", "agents", "automation", "AI tools"]
   },
   {
     "name": "IBM Technology",
+    "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
     "url": "https://www.youtube.com/@IBMTechnology",
     "relationship": "enterprise explainer",
     "focus": ["RAG", "agents", "enterprise adoption", "governance"]
   },
   {
     "name": "LangChain",
+    "channel_id": "UCC-lyoTfSrcJzA1ab3APAgw",
     "url": "https://www.youtube.com/@LangChain",
     "relationship": "framework/vendor",
     "focus": ["agents", "RAG", "tool calling", "LLM applications"]
   },
   {
     "name": "AssemblyAI",
+    "channel_id": "UCtatfZMf-8EkIwASXM4ts0A",
     "url": "https://www.youtube.com/@AssemblyAI",
     "relationship": "developer platform",
     "focus": ["speech AI", "LLM apps", "multimodal", "tutorials"]
   },
   {
     "name": "DeepLearning.AI",
+    "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
     "url": "https://www.youtube.com/@Deeplearningai",
     "relationship": "education",
     "focus": ["courses", "interviews", "LLM concepts", "AI engineering"]

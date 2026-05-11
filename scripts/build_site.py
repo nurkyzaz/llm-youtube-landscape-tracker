@@ -221,6 +221,20 @@ def build_log(runs: list[dict[str, Any]], videos: list[dict[str, Any]]) -> list[
     return log
 
 
+def latest_timestamp(runs: list[dict[str, Any]]) -> str:
+    for run in reversed(runs):
+        if run.get("timestamp"):
+            return str(run["timestamp"])
+    return ""
+
+
+def latest_warning(runs: list[dict[str, Any]]) -> str:
+    for run in reversed(runs):
+        if run.get("warning"):
+            return str(run["warning"])
+    return ""
+
+
 def write_data_js(payload: dict[str, Any]) -> None:
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     body = json.dumps(payload, ensure_ascii=False, indent=2)
@@ -258,6 +272,8 @@ def build_site() -> None:
             "source": "YouTube RSS + captions + transcript-backed summaries",
             "repository": "https://github.com/nurkyzaz/llm-youtube-landscape-tracker",
             "site": "https://nurkyzaz.github.io/llm-youtube-landscape-tracker/",
+            "lastUpdated": latest_timestamp(runs),
+            "warning": latest_warning(runs),
         },
     }
     write_data_js(payload)

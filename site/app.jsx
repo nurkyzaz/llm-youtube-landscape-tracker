@@ -11,13 +11,11 @@ const DEFAULTS = /*EDITMODE-BEGIN*/{
 
 function App() {
   const [t, setTweak] = useTweaks(DEFAULTS);
-  const { CHANNELS, TOPICS, MODELS, VIDEOS, MATRIX, INGEST_LOG } = window.__DATA__;
+  const { CHANNELS, TOPICS, MODELS, VIDEOS, MATRIX, INGEST_LOG, META } = window.__DATA__;
 
   const [filters, setFilters] = useState({ q: "", channel: "all", topic: "all", model: "all", stance: "all" });
   const [selectedId, setSelectedId] = useState(null);
   const [view, setView] = useState("table");
-  const [paused, setPaused] = useState(false);
-  const [lastRefresh, setLastRefresh] = useState(Date.now());
 
   // Apply theme + density to body
   useEffect(() => {
@@ -25,13 +23,6 @@ function App() {
     document.body.dataset.density = t.density;
     document.documentElement.style.setProperty("--accent", oklchFromHex(t.accent));
   }, [t.theme, t.density, t.accent]);
-
-  // Simulated live refresh tick
-  useEffect(() => {
-    if (paused) return;
-    const id = setInterval(() => setLastRefresh(Date.now()), 45000);
-    return () => clearInterval(id);
-  }, [paused]);
 
   const filtered = useMemo(() => {
     const q = filters.q.trim().toLowerCase();
@@ -62,10 +53,7 @@ function App() {
   return (
     <>
       <Header
-        lastRefresh={lastRefresh}
-        paused={paused}
-        onTogglePause={() => setPaused(p => !p)}
-        onForceRefresh={() => setLastRefresh(Date.now())}
+        meta={META}
         counts={counts}
       />
       <ViewTabs view={view} setView={setView} counts={counts} />
@@ -97,7 +85,7 @@ function App() {
         <span className="mono">
           Pipeline: YouTube RSS → captions/transcript fallback → GitHub Models/local summary → static data.js → GitHub Pages.
         </span>
-        <span className="mono">© {new Date().getFullYear()} · Live tracker using public YouTube metadata and transcript-backed summaries.</span>
+        <span className="mono">© {new Date().getFullYear()} · Tracker uses public YouTube metadata and transcript-backed summaries.</span>
       </footer>
 
       <VideoPanel video={selected} channel={selectedChannel} onClose={() => setSelectedId(null)} />

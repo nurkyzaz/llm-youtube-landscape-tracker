@@ -34,10 +34,16 @@ jobs:
       - name: Summarize transcript-backed videos
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          WEBSHARE_USER: ${{ secrets.WEBSHARE_USER }}
+          WEBSHARE_PASS: ${{ secrets.WEBSHARE_PASS }}
+          YT_DLP_PROXY_URL: ${{ secrets.YT_DLP_PROXY_URL }}
         run: python -m scripts.summarize --max-videos 12
 
       - name: Build static site
         run: python -m scripts.build_site
+
+      - name: Build frontend bundle
+        run: python -m scripts.build_frontend
 
       - name: Commit updated data
         run: |

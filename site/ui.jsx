@@ -33,10 +33,7 @@ const stanceLabel = {
 };
 
 // ────────────────────────────────────────────────── header ──────────
-function Header({ lastRefresh, paused, onTogglePause, onForceRefresh, counts }) {
-  const [now, setNow] = useState(Date.now());
-  useEffect(() => { const t = setInterval(() => setNow(Date.now()), 1000); return () => clearInterval(t); }, []);
-  const seconds = Math.max(0, Math.floor((now - lastRefresh) / 1000));
+function Header({ meta, counts }) {
   return (
     <header style={{ padding: "44px 48px 32px" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 24, flexWrap: "wrap" }}>
@@ -44,9 +41,7 @@ function Header({ lastRefresh, paused, onTogglePause, onForceRefresh, counts }) 
           <div style={{ display: "inline-flex", alignItems: "center", gap: 10, marginBottom: 18,
                         padding: "6px 12px", background: "var(--accent)", color: "white",
                         borderRadius: 999, fontSize: 12, fontWeight: 700, letterSpacing: ".02em", whiteSpace: "nowrap" }}>
-            <span style={{ width: 6, height: 6, borderRadius: 999, background: "white",
-                           animation: "pulse 1.6s ease-in-out infinite" }} />
-            LLM TRACKER · LIVE
+            LLM TRACKER · SCHEDULED
           </div>
           <h1 style={{ margin: 0, fontSize: 56, lineHeight: 1.04, fontWeight: 800, letterSpacing: "-.03em", color: "var(--ink)" }}>
             The LLM YouTube<br/>Landscape
@@ -56,14 +51,15 @@ function Header({ lastRefresh, paused, onTogglePause, onForceRefresh, counts }) 
             Every row reflects what the creator actually said — not the title or thumbnail.
           </p>
         </div>
-        <RefreshBadge seconds={seconds} paused={paused} onToggle={onTogglePause} onForce={onForceRefresh} counts={counts} />
+        <RefreshBadge meta={meta} counts={counts} />
       </div>
-      <style>{`@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }`}</style>
     </header>
   );
 }
 
-function RefreshBadge({ seconds, paused, onToggle, onForce, counts }) {
+function RefreshBadge({ meta, counts }) {
+  const updated = meta?.lastUpdated || "not run yet";
+  const warning = meta?.warning;
   return (
     <div style={{
       background: "var(--bg-card)", border: "1px solid var(--rule-soft)",
@@ -74,24 +70,19 @@ function RefreshBadge({ seconds, paused, onToggle, onForce, counts }) {
         <span style={{ display: "inline-flex", alignItems: "center", gap: 8, fontWeight: 700, fontSize: 13, color: "var(--ink)", whiteSpace: "nowrap" }}>
           <span style={{
             width: 8, height: 8, borderRadius: 999,
-            background: paused ? "var(--ink-soft)" : "var(--accent)",
-            boxShadow: paused ? "none" : "0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent)",
-            animation: paused ? "none" : "pulse 1.8s ease-in-out infinite",
+            background: warning ? "var(--warn)" : "var(--accent)",
           }} />
-          {paused ? "Paused" : "Live feed"}
+          Last updated
         </span>
         <span style={{ fontSize: 12, color: "var(--ink-mute)", fontFamily: "var(--mono)", whiteSpace: "nowrap" }}>
-          {seconds}s ago
+          {updated}
         </span>
       </div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
         <Stat n={counts.videos} l="Videos" />
         <Stat n={counts.fresh} l="New today" accent />
       </div>
-      <div style={{ display: "flex", gap: 8 }}>
-        <PillButton onClick={onToggle} secondary>{paused ? "Resume" : "Pause"}</PillButton>
-        <PillButton onClick={onForce}>Sync now</PillButton>
-      </div>
+      {warning && <div style={{ fontSize: 12, lineHeight: 1.4, color: "var(--warn)", fontWeight: 700 }}>{warning}</div>}
     </div>
   );
 }

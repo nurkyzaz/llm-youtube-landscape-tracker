@@ -1324,7 +1324,7 @@ window.__DATA__ = {
       "title": "ChatGPT Images 2.0 is INSANE! 🤯",
       "date": "2026-04-28",
       "publishedAt": "2026-04-28T15:40:06+00:00",
-      "daysAgo": 12,
+      "daysAgo": 13,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -2449,6 +2449,8 @@ window.__DATA__ = {
   "META": {
     "source": "YouTube RSS + captions + transcript-backed summaries",
     "repository": "https://github.com/nurkyzaz/llm-youtube-landscape-tracker",
-    "site": "https://nurkyzaz.github.io/llm-youtube-landscape-tracker/"
+    "site": "https://nurkyzaz.github.io/llm-youtube-landscape-tracker/",
+    "lastUpdated": "2026-05-11T15:16:19+00:00",
+    "warning": ""
   }
 };
