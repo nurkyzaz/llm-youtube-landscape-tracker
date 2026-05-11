@@ -228,6 +228,144 @@
     "video_id": "_9Kqr4-hf68"
   },
   {
+    "author": "AssemblyAI",
+    "channel": "AssemblyAI",
+    "channel_focus": [
+      "speech AI",
+      "LLM apps",
+      "multimodal",
+      "tutorials"
+    ],
+    "channel_id": "UCtatfZMf-8EkIwASXM4ts0A",
+    "channel_url": "https://www.youtube.com/@AssemblyAI",
+    "first_seen_at": "2026-05-11T14:30:48+00:00",
+    "published_at": "2026-05-11T04:03:56+00:00",
+    "relationship": "developer platform",
+    "summarized_at": "2026-05-11T14:30:52+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=vANGyXly3pM! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "The Future IS Speaker Identification 🚀",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-11T11:09:16+00:00",
+    "url": "https://www.youtube.com/watch?v=vANGyXly3pM",
+    "video_id": "vANGyXly3pM"
+  },
+  {
+    "author": "AssemblyAI",
+    "channel": "AssemblyAI",
+    "channel_focus": [
+      "speech AI",
+      "LLM apps",
+      "multimodal",
+      "tutorials"
+    ],
+    "channel_id": "UCtatfZMf-8EkIwASXM4ts0A",
+    "channel_url": "https://www.youtube.com/@AssemblyAI",
+    "first_seen_at": "2026-05-11T14:30:48+00:00",
+    "published_at": "2026-05-11T04:02:15+00:00",
+    "relationship": "developer platform",
+    "summarized_at": "2026-05-11T14:30:54+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=BFu7YI_Y30w! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "Into the Future: Better Language Support 🌍",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-11T07:45:26+00:00",
+    "url": "https://www.youtube.com/watch?v=BFu7YI_Y30w",
+    "video_id": "BFu7YI_Y30w"
+  },
+  {
+    "author": "AssemblyAI",
+    "channel": "AssemblyAI",
+    "channel_focus": [
+      "speech AI",
+      "LLM apps",
+      "multimodal",
+      "tutorials"
+    ],
+    "channel_id": "UCtatfZMf-8EkIwASXM4ts0A",
+    "channel_url": "https://www.youtube.com/@AssemblyAI",
+    "first_seen_at": "2026-05-11T14:30:48+00:00",
+    "published_at": "2026-05-11T04:00:46+00:00",
+    "relationship": "developer platform",
+    "summarized_at": "2026-05-11T14:30:56+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=X4SsMaK5HlI! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "3 Product Use Cases for Real-time (CoLoop) ⚡️",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-11T07:18:01+00:00",
+    "url": "https://www.youtube.com/watch?v=X4SsMaK5HlI",
+    "video_id": "X4SsMaK5HlI"
+  },
+  {
+    "author": "AssemblyAI",
+    "channel": "AssemblyAI",
+    "channel_focus": [
+      "speech AI",
+      "LLM apps",
+      "multimodal",
+      "tutorials"
+    ],
+    "channel_id": "UCtatfZMf-8EkIwASXM4ts0A",
+    "channel_url": "https://www.youtube.com/@AssemblyAI",
+    "first_seen_at": "2026-05-11T14:30:48+00:00",
+    "published_at": "2026-05-11T03:57:57+00:00",
+    "relationship": "developer platform",
+    "summarized_at": "2026-05-11T14:30:59+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=JihZT9IVX0g! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "Real-Time vs Post-Call: Behind EdgeTier's Architecture 💡",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-11T06:47:58+00:00",
+    "url": "https://www.youtube.com/watch?v=JihZT9IVX0g",
+    "video_id": "JihZT9IVX0g"
+  },
+  {
+    "author": "IBM Technology",
+    "channel": "IBM Technology",
+    "channel_focus": [
+      "RAG",
+      "agents",
+      "enterprise adoption",
+      "governance"
+    ],
+    "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+    "channel_url": "https://www.youtube.com/@IBMTechnology",
+    "first_seen_at": "2026-05-11T14:30:47+00:00",
+    "published_at": "2026-05-10T11:00:47+00:00",
+    "relationship": "enterprise explainer",
+    "summarized_at": "2026-05-11T14:31:01+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=V_qJIrvWyRQ! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "Agentic Consent Explained: How AI Agents Act Safely and Responsibly",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-10T11:01:22+00:00",
+    "url": "https://www.youtube.com/watch?v=V_qJIrvWyRQ",
+    "video_id": "V_qJIrvWyRQ"
+  },
+  {
+    "author": "Matt Wolfe",
+    "channel": "Matt Wolfe",
+    "channel_focus": [
+      "AI tools",
+      "model releases",
+      "creator workflows",
+      "industry news"
+    ],
+    "channel_id": "UChpleBmo18P08aKCIgti38g",
+    "channel_url": "https://www.youtube.com/@mreflow",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2026-05-09T18:57:28+00:00",
+    "relationship": "tool/news curator",
+    "summarized_at": "2026-05-11T14:31:03+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=b8V8bDmc8oQ! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "Codex Now Has \"AI Pets\"",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-10T19:18:37+00:00",
+    "url": "https://www.youtube.com/watch?v=b8V8bDmc8oQ",
+    "video_id": "b8V8bDmc8oQ"
+  },
+  {
     "author": "DeepLearningAI",
     "channel": "DeepLearning.AI",
     "channel_focus": [
@@ -391,6 +529,434 @@
     "video_id": "ltw8PE_uILw"
   },
   {
+    "author": "Matt Wolfe",
+    "channel": "Matt Wolfe",
+    "channel_focus": [
+      "AI tools",
+      "model releases",
+      "creator workflows",
+      "industry news"
+    ],
+    "channel_id": "UChpleBmo18P08aKCIgti38g",
+    "channel_url": "https://www.youtube.com/@mreflow",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2026-05-08T15:00:27+00:00",
+    "relationship": "tool/news curator",
+    "summarized_at": "2026-05-11T14:31:06+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=SXneZ3bRKO4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "AI News: OpenAI Absolutely Cooked This Week!",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-09T11:11:23+00:00",
+    "url": "https://www.youtube.com/watch?v=SXneZ3bRKO4",
+    "video_id": "SXneZ3bRKO4"
+  },
+  {
+    "author": "IBM Technology",
+    "channel": "IBM Technology",
+    "channel_focus": [
+      "RAG",
+      "agents",
+      "enterprise adoption",
+      "governance"
+    ],
+    "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+    "channel_url": "https://www.youtube.com/@IBMTechnology",
+    "first_seen_at": "2026-05-11T14:30:47+00:00",
+    "published_at": "2026-05-08T10:01:03+00:00",
+    "relationship": "enterprise explainer",
+    "summarized_at": "2026-05-11T14:31:08+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=YHKXflgkHak! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "Live from Think 2026: AI operating model, VC funding & CAIO evolution",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-08T10:01:22+00:00",
+    "url": "https://www.youtube.com/watch?v=YHKXflgkHak",
+    "video_id": "YHKXflgkHak"
+  },
+  {
+    "author": "LangChain",
+    "channel": "LangChain",
+    "channel_focus": [
+      "agents",
+      "RAG",
+      "tool calling",
+      "LLM applications"
+    ],
+    "channel_id": "UCC-lyoTfSrcJzA1ab3APAgw",
+    "channel_url": "https://www.youtube.com/@LangChain",
+    "first_seen_at": "2026-05-11T14:30:48+00:00",
+    "published_at": "2026-05-07T14:01:28+00:00",
+    "relationship": "framework/vendor",
+    "summarized_at": "2026-05-11T14:31:11+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=trEM9OKr5Sc! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "How Ramp built an AI agent that can think outside of tokens | Alex Shevchenko",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-07T16:32:44+00:00",
+    "url": "https://www.youtube.com/watch?v=trEM9OKr5Sc",
+    "video_id": "trEM9OKr5Sc"
+  },
+  {
+    "author": "IBM Technology",
+    "channel": "IBM Technology",
+    "channel_focus": [
+      "RAG",
+      "agents",
+      "enterprise adoption",
+      "governance"
+    ],
+    "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+    "channel_url": "https://www.youtube.com/@IBMTechnology",
+    "first_seen_at": "2026-05-11T14:30:47+00:00",
+    "published_at": "2026-05-07T11:00:58+00:00",
+    "relationship": "enterprise explainer",
+    "summarized_at": "2026-05-11T14:31:13+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=ZrHKwxasXS4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "The Rise of Crypto Agility: How to Secure Systems for the Quantum Era",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-07T11:01:30+00:00",
+    "url": "https://www.youtube.com/watch?v=ZrHKwxasXS4",
+    "video_id": "ZrHKwxasXS4"
+  },
+  {
+    "author": "Matt Wolfe",
+    "channel": "Matt Wolfe",
+    "channel_focus": [
+      "AI tools",
+      "model releases",
+      "creator workflows",
+      "industry news"
+    ],
+    "channel_id": "UChpleBmo18P08aKCIgti38g",
+    "channel_url": "https://www.youtube.com/@mreflow",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2026-05-06T19:00:00+00:00",
+    "relationship": "tool/news curator",
+    "summarized_at": "2026-05-11T14:31:16+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=z7EE9VWKrCA! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "Your AI Setup Needs This",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-07T07:01:04+00:00",
+    "url": "https://www.youtube.com/watch?v=z7EE9VWKrCA",
+    "video_id": "z7EE9VWKrCA"
+  },
+  {
+    "author": "Matt Wolfe",
+    "channel": "Matt Wolfe",
+    "channel_focus": [
+      "AI tools",
+      "model releases",
+      "creator workflows",
+      "industry news"
+    ],
+    "channel_id": "UChpleBmo18P08aKCIgti38g",
+    "channel_url": "https://www.youtube.com/@mreflow",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2026-05-06T18:19:41+00:00",
+    "relationship": "tool/news curator",
+    "summarized_at": "2026-05-11T14:31:18+00:00",
+    "summary_error": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=yke4fLQUsh4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nThere are two things y",
+    "summary_status": "failed",
+    "title": "Build A Second Brain That Remembers Everything",
+    "transcript_status": "transcript_unavailable",
+    "updated_at": "2026-05-07T20:58:55+00:00",
+    "url": "https://www.youtube.com/watch?v=yke4fLQUsh4",
+    "video_id": "yke4fLQUsh4"
+  },
+  {
+    "author": "Two Minute Papers",
+    "channel": "Two Minute Papers",
+    "channel_focus": [
+      "research papers",
+      "model capabilities",
+      "multimodal AI"
+    ],
+    "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+    "channel_url": "https://www.youtube.com/@TwoMinutePapers",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2026-05-06T16:07:54+00:00",
+    "relationship": "research explainer",
+    "summary_status": "pending",
+    "title": "DeepSeek V4 AI Beats Billion Dollar Systems…For Free",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-11T00:55:17+00:00",
+    "url": "https://www.youtube.com/watch?v=p7K3xfViWCE",
+    "video_id": "p7K3xfViWCE"
+  },
+  {
+    "author": "DeepLearningAI",
+    "channel": "DeepLearning.AI",
+    "channel_focus": [
+      "courses",
+      "interviews",
+      "LLM concepts",
+      "AI engineering"
+    ],
+    "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+    "channel_url": "https://www.youtube.com/@Deeplearningai",
+    "first_seen_at": "2026-05-11T14:30:49+00:00",
+    "published_at": "2026-05-06T14:45:14+00:00",
+    "relationship": "education",
+    "summary_status": "pending",
+    "title": "Build Interactive Agents with Generative UI",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-06T16:56:21+00:00",
+    "url": "https://www.youtube.com/watch?v=J26M-cpFG-M",
+    "video_id": "J26M-cpFG-M"
+  },
+  {
+    "author": "LangChain",
+    "channel": "LangChain",
+    "channel_focus": [
+      "agents",
+      "RAG",
+      "tool calling",
+      "LLM applications"
+    ],
+    "channel_id": "UCC-lyoTfSrcJzA1ab3APAgw",
+    "channel_url": "https://www.youtube.com/@LangChain",
+    "first_seen_at": "2026-05-11T14:30:48+00:00",
+    "published_at": "2026-05-06T13:05:36+00:00",
+    "relationship": "framework/vendor",
+    "summary_status": "pending",
+    "title": "How Clay manages 300M agent runs a month with LangSmith",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-06T13:05:56+00:00",
+    "url": "https://www.youtube.com/watch?v=cx6_tb6HCeY",
+    "video_id": "cx6_tb6HCeY"
+  },
+  {
+    "author": "IBM Technology",
+    "channel": "IBM Technology",
+    "channel_focus": [
+      "RAG",
+      "agents",
+      "enterprise adoption",
+      "governance"
+    ],
+    "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ",
+    "channel_url": "https://www.youtube.com/@IBMTechnology",
+    "first_seen_at": "2026-05-11T14:30:47+00:00",
+    "published_at": "2026-05-06T10:00:31+00:00",
+    "relationship": "enterprise explainer",
+    "summary_status": "pending",
+    "title": "Claude Security’s public beta, OpenAI’s five-point plan and cybersecurity’s Y2K moment",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-06T18:03:56+00:00",
+    "url": "https://www.youtube.com/watch?v=EJg67cLfLYo",
+    "video_id": "EJg67cLfLYo"
+  },
+  {
+    "author": "DeepLearningAI",
+    "channel": "DeepLearning.AI",
+    "channel_focus": [
+      "courses",
+      "interviews",
+      "LLM concepts",
+      "AI engineering"
+    ],
+    "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+    "channel_url": "https://www.youtube.com/@Deeplearningai",
+    "first_seen_at": "2026-05-11T14:30:49+00:00",
+    "published_at": "2026-05-05T19:00:49+00:00",
+    "relationship": "education",
+    "summary_status": "pending",
+    "title": "Just deployed to production… and leaked all the credit cards 😬",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-06T07:03:53+00:00",
+    "url": "https://www.youtube.com/watch?v=I1Xi9m6rgHI",
+    "video_id": "I1Xi9m6rgHI"
+  },
+  {
+    "author": "LangChain",
+    "channel": "LangChain",
+    "channel_focus": [
+      "agents",
+      "RAG",
+      "tool calling",
+      "LLM applications"
+    ],
+    "channel_id": "UCC-lyoTfSrcJzA1ab3APAgw",
+    "channel_url": "https://www.youtube.com/@LangChain",
+    "first_seen_at": "2026-05-11T14:30:48+00:00",
+    "published_at": "2026-05-04T18:42:04+00:00",
+    "relationship": "framework/vendor",
+    "summary_status": "pending",
+    "title": "LangChain Live Stream",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-04T18:42:05+00:00",
+    "url": "https://www.youtube.com/watch?v=cmovqJ5X7yA",
+    "video_id": "cmovqJ5X7yA"
+  },
+  {
+    "author": "LangChain",
+    "channel": "LangChain",
+    "channel_focus": [
+      "agents",
+      "RAG",
+      "tool calling",
+      "LLM applications"
+    ],
+    "channel_id": "UCC-lyoTfSrcJzA1ab3APAgw",
+    "channel_url": "https://www.youtube.com/@LangChain",
+    "first_seen_at": "2026-05-11T14:30:48+00:00",
+    "published_at": "2026-05-04T14:01:08+00:00",
+    "relationship": "framework/vendor",
+    "summary_status": "pending",
+    "title": "Should You Use a Sandbox for Your Agent? | Max Agency #aidesign #aiinfrastructure",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-07T16:26:16+00:00",
+    "url": "https://www.youtube.com/watch?v=g_OqeRku5Pc",
+    "video_id": "g_OqeRku5Pc"
+  },
+  {
+    "author": "Two Minute Papers",
+    "channel": "Two Minute Papers",
+    "channel_focus": [
+      "research papers",
+      "model capabilities",
+      "multimodal AI"
+    ],
+    "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+    "channel_url": "https://www.youtube.com/@TwoMinutePapers",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2026-05-03T17:02:48+00:00",
+    "relationship": "research explainer",
+    "summary_status": "pending",
+    "title": "NVIDIA's New AI Turns One Photo Into A World That Never Breaks",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-04T07:35:29+00:00",
+    "url": "https://www.youtube.com/watch?v=eCw33snvoNI",
+    "video_id": "eCw33snvoNI"
+  },
+  {
+    "author": "The AI Advantage",
+    "channel": "The AI Advantage",
+    "channel_focus": [
+      "productivity",
+      "agents",
+      "automation",
+      "AI tools"
+    ],
+    "channel_id": "UCHhYXsLBEVVnbvsq57n1MTQ",
+    "channel_url": "https://www.youtube.com/@aiadvantage",
+    "first_seen_at": "2026-05-11T14:30:47+00:00",
+    "published_at": "2026-05-02T14:01:16+00:00",
+    "relationship": "applied workflow educator",
+    "summary_status": "pending",
+    "title": "I Made Presentations Using Every AI. This is the Best One By Far!",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-04T20:12:42+00:00",
+    "url": "https://www.youtube.com/watch?v=oOHnK_qLu8Q",
+    "video_id": "oOHnK_qLu8Q"
+  },
+  {
+    "author": "The AI Advantage",
+    "channel": "The AI Advantage",
+    "channel_focus": [
+      "productivity",
+      "agents",
+      "automation",
+      "AI tools"
+    ],
+    "channel_id": "UCHhYXsLBEVVnbvsq57n1MTQ",
+    "channel_url": "https://www.youtube.com/@aiadvantage",
+    "first_seen_at": "2026-05-11T14:30:47+00:00",
+    "published_at": "2026-05-01T17:06:48+00:00",
+    "relationship": "applied workflow educator",
+    "summary_status": "pending",
+    "title": "OpenAI Codex Can Now Use Your Computer! (Full Breakdown + Testing)",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-07T02:57:09+00:00",
+    "url": "https://www.youtube.com/watch?v=t7l2XkgkyxE",
+    "video_id": "t7l2XkgkyxE"
+  },
+  {
+    "author": "Two Minute Papers",
+    "channel": "Two Minute Papers",
+    "channel_focus": [
+      "research papers",
+      "model capabilities",
+      "multimodal AI"
+    ],
+    "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+    "channel_url": "https://www.youtube.com/@TwoMinutePapers",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2026-05-01T16:43:34+00:00",
+    "relationship": "research explainer",
+    "summary_status": "pending",
+    "title": "Sakana AI’s God Simulator Is Brilliant",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-05T08:54:49+00:00",
+    "url": "https://www.youtube.com/watch?v=QzZ4VwDHAT4",
+    "video_id": "QzZ4VwDHAT4"
+  },
+  {
+    "author": "Two Minute Papers",
+    "channel": "Two Minute Papers",
+    "channel_focus": [
+      "research papers",
+      "model capabilities",
+      "multimodal AI"
+    ],
+    "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+    "channel_url": "https://www.youtube.com/@TwoMinutePapers",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2026-04-28T17:16:01+00:00",
+    "relationship": "research explainer",
+    "summary_status": "pending",
+    "title": "Solved: The Bug That Haunted AI Video For Years",
+    "transcript_status": "pending",
+    "updated_at": "2026-04-28T18:39:06+00:00",
+    "url": "https://www.youtube.com/watch?v=yzajLZXh9JU",
+    "video_id": "yzajLZXh9JU"
+  },
+  {
+    "author": "The AI Advantage",
+    "channel": "The AI Advantage",
+    "channel_focus": [
+      "productivity",
+      "agents",
+      "automation",
+      "AI tools"
+    ],
+    "channel_id": "UCHhYXsLBEVVnbvsq57n1MTQ",
+    "channel_url": "https://www.youtube.com/@aiadvantage",
+    "first_seen_at": "2026-05-11T14:30:47+00:00",
+    "published_at": "2026-04-28T15:40:06+00:00",
+    "relationship": "applied workflow educator",
+    "summary_status": "pending",
+    "title": "ChatGPT Images 2.0 is INSANE! 🤯",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-03T10:59:50+00:00",
+    "url": "https://www.youtube.com/watch?v=a7UU4jy84Mw",
+    "video_id": "a7UU4jy84Mw"
+  },
+  {
+    "author": "DeepLearningAI",
+    "channel": "DeepLearning.AI",
+    "channel_focus": [
+      "courses",
+      "interviews",
+      "LLM concepts",
+      "AI engineering"
+    ],
+    "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+    "channel_url": "https://www.youtube.com/@Deeplearningai",
+    "first_seen_at": "2026-05-11T14:30:49+00:00",
+    "published_at": "2026-04-28T15:00:32+00:00",
+    "relationship": "education",
+    "summary_status": "pending",
+    "title": "Become an AI power user 🌟 new course from Andrew Ng",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-03T10:59:54+00:00",
+    "url": "https://www.youtube.com/watch?v=FNfIMnpz-ZY",
+    "video_id": "FNfIMnpz-ZY"
+  },
+  {
     "author": "AI Explained",
     "channel": "AI Explained",
     "channel_focus": [
@@ -410,6 +976,111 @@
     "updated_at": "2026-05-10T13:39:21+00:00",
     "url": "https://www.youtube.com/watch?v=jz0rNhfAKo8",
     "video_id": "jz0rNhfAKo8"
+  },
+  {
+    "author": "The AI Advantage",
+    "channel": "The AI Advantage",
+    "channel_focus": [
+      "productivity",
+      "agents",
+      "automation",
+      "AI tools"
+    ],
+    "channel_id": "UCHhYXsLBEVVnbvsq57n1MTQ",
+    "channel_url": "https://www.youtube.com/@aiadvantage",
+    "first_seen_at": "2026-05-11T14:30:47+00:00",
+    "published_at": "2026-04-24T17:09:47+00:00",
+    "relationship": "applied workflow educator",
+    "summary_status": "pending",
+    "title": "ChatGPT Just Changed Forever...",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-05T02:28:28+00:00",
+    "url": "https://www.youtube.com/watch?v=MI678bQM7L0",
+    "video_id": "MI678bQM7L0"
+  },
+  {
+    "author": "DeepLearningAI",
+    "channel": "DeepLearning.AI",
+    "channel_focus": [
+      "courses",
+      "interviews",
+      "LLM concepts",
+      "AI engineering"
+    ],
+    "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+    "channel_url": "https://www.youtube.com/@Deeplearningai",
+    "first_seen_at": "2026-05-11T14:30:49+00:00",
+    "published_at": "2026-04-22T14:33:13+00:00",
+    "relationship": "education",
+    "summary_status": "pending",
+    "title": "📉 Turn your multimodal data into something you can actually query",
+    "transcript_status": "pending",
+    "updated_at": "2026-04-24T18:28:58+00:00",
+    "url": "https://www.youtube.com/watch?v=XteKUbuvNrI",
+    "video_id": "XteKUbuvNrI"
+  },
+  {
+    "author": "AI Explained",
+    "channel": "AI Explained",
+    "channel_focus": [
+      "model releases",
+      "benchmarks",
+      "capabilities",
+      "safety"
+    ],
+    "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+    "channel_url": "https://www.youtube.com/@aiexplained-official",
+    "first_seen_at": "2026-05-11T14:30:46+00:00",
+    "published_at": "2026-04-17T18:07:46+00:00",
+    "relationship": "frontier-model analyst",
+    "summary_status": "pending",
+    "title": "Claude Opus 4.7 - A New Frontier, in Performance … and Drama",
+    "transcript_status": "pending",
+    "updated_at": "2026-04-21T10:19:37+00:00",
+    "url": "https://www.youtube.com/watch?v=QVJcdfkRpH8",
+    "video_id": "QVJcdfkRpH8"
+  },
+  {
+    "author": "AI Explained",
+    "channel": "AI Explained",
+    "channel_focus": [
+      "model releases",
+      "benchmarks",
+      "capabilities",
+      "safety"
+    ],
+    "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+    "channel_url": "https://www.youtube.com/@aiexplained-official",
+    "first_seen_at": "2026-05-11T14:30:46+00:00",
+    "published_at": "2026-04-08T17:39:20+00:00",
+    "relationship": "frontier-model analyst",
+    "summary_status": "pending",
+    "title": "Claude Mythos: Highlights from 244-page Release",
+    "transcript_status": "pending",
+    "updated_at": "2026-04-29T19:39:57+00:00",
+    "url": "https://www.youtube.com/watch?v=txx6ec6MLNY",
+    "video_id": "txx6ec6MLNY"
+  },
+  {
+    "author": "AI Explained",
+    "channel": "AI Explained",
+    "channel_focus": [
+      "model releases",
+      "benchmarks",
+      "capabilities",
+      "safety"
+    ],
+    "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+    "channel_url": "https://www.youtube.com/@aiexplained-official",
+    "first_seen_at": "2026-05-11T14:30:46+00:00",
+    "published_at": "2026-03-26T20:15:12+00:00",
+    "relationship": "frontier-model analyst",
+    "summary_status": "pending",
+    "title": "Two AI Models Set to “stir government urgency”, But Will This Challenge Undo Them?",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-04T19:19:13+00:00",
+    "url": "https://www.youtube.com/watch?v=s4tptozUJ8Y",
+    "video_id": "s4tptozUJ8Y"
   },
   {
     "author": "Yannic Kilcher",
@@ -433,6 +1104,111 @@
     "video_id": "xHi8PUIVyoo"
   },
   {
+    "author": "AI Explained",
+    "channel": "AI Explained",
+    "channel_focus": [
+      "model releases",
+      "benchmarks",
+      "capabilities",
+      "safety"
+    ],
+    "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+    "channel_url": "https://www.youtube.com/@aiexplained-official",
+    "first_seen_at": "2026-05-11T14:30:46+00:00",
+    "published_at": "2026-03-06T16:25:26+00:00",
+    "relationship": "frontier-model analyst",
+    "summary_status": "pending",
+    "title": "What the New ChatGPT 5.4 Means for the World",
+    "transcript_status": "pending",
+    "updated_at": "2026-04-22T22:21:44+00:00",
+    "url": "https://www.youtube.com/watch?v=zizoDORjmlQ",
+    "video_id": "zizoDORjmlQ"
+  },
+  {
+    "author": "Yannic Kilcher",
+    "channel": "Yannic Kilcher",
+    "channel_focus": [
+      "papers",
+      "open models",
+      "training",
+      "alignment"
+    ],
+    "channel_id": "UCZHmQk67mSJgfCCTn7xBfew",
+    "channel_url": "https://www.youtube.com/@YannicKilcher",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2025-12-29T03:44:20+00:00",
+    "relationship": "research analyst",
+    "summary_status": "pending",
+    "title": "Traditional X-Mas Stream",
+    "transcript_status": "pending",
+    "updated_at": "2026-04-28T19:05:27+00:00",
+    "url": "https://www.youtube.com/watch?v=Dr6jw-WAd9E",
+    "video_id": "Dr6jw-WAd9E"
+  },
+  {
+    "author": "Yannic Kilcher",
+    "channel": "Yannic Kilcher",
+    "channel_focus": [
+      "papers",
+      "open models",
+      "training",
+      "alignment"
+    ],
+    "channel_id": "UCZHmQk67mSJgfCCTn7xBfew",
+    "channel_url": "https://www.youtube.com/@YannicKilcher",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2025-12-28T12:41:54+00:00",
+    "relationship": "research analyst",
+    "summary_status": "pending",
+    "title": "Traditional Holiday Live Stream",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-04T20:58:58+00:00",
+    "url": "https://www.youtube.com/watch?v=DNajvkqfobY",
+    "video_id": "DNajvkqfobY"
+  },
+  {
+    "author": "Yannic Kilcher",
+    "channel": "Yannic Kilcher",
+    "channel_focus": [
+      "papers",
+      "open models",
+      "training",
+      "alignment"
+    ],
+    "channel_id": "UCZHmQk67mSJgfCCTn7xBfew",
+    "channel_url": "https://www.youtube.com/@YannicKilcher",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2025-12-27T14:33:29+00:00",
+    "relationship": "research analyst",
+    "summary_status": "pending",
+    "title": "TiDAR: Think in Diffusion, Talk in Autoregression (Paper Analysis)",
+    "transcript_status": "pending",
+    "updated_at": "2026-02-17T07:03:45+00:00",
+    "url": "https://www.youtube.com/watch?v=taCVT5vDAk0",
+    "video_id": "taCVT5vDAk0"
+  },
+  {
+    "author": "Yannic Kilcher",
+    "channel": "Yannic Kilcher",
+    "channel_focus": [
+      "papers",
+      "open models",
+      "training",
+      "alignment"
+    ],
+    "channel_id": "UCZHmQk67mSJgfCCTn7xBfew",
+    "channel_url": "https://www.youtube.com/@YannicKilcher",
+    "first_seen_at": "2026-05-11T14:30:45+00:00",
+    "published_at": "2025-12-14T16:22:15+00:00",
+    "relationship": "research analyst",
+    "summary_status": "pending",
+    "title": "Titans: Learning to Memorize at Test Time (Paper Analysis)",
+    "transcript_status": "pending",
+    "updated_at": "2026-04-27T23:39:22+00:00",
+    "url": "https://www.youtube.com/watch?v=v67plFw1nMw",
+    "video_id": "v67plFw1nMw"
+  },
+  {
     "author": "Andrej Karpathy",
     "channel": "Andrej Karpathy",
     "channel_focus": [
@@ -452,5 +1228,89 @@
     "updated_at": "2026-02-27T00:47:02+00:00",
     "url": "https://www.youtube.com/watch?v=EWvNQjAaOHw",
     "video_id": "EWvNQjAaOHw"
+  },
+  {
+    "author": "Andrej Karpathy",
+    "channel": "Andrej Karpathy",
+    "channel_focus": [
+      "LLM internals",
+      "transformers",
+      "coding",
+      "deep learning"
+    ],
+    "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+    "channel_url": "https://www.youtube.com/@AndrejKarpathy",
+    "first_seen_at": "2026-05-11T14:30:46+00:00",
+    "published_at": "2025-02-05T18:23:47+00:00",
+    "relationship": "education",
+    "summary_status": "pending",
+    "title": "Deep Dive into LLMs like ChatGPT",
+    "transcript_status": "pending",
+    "updated_at": "2026-04-21T21:46:03+00:00",
+    "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+    "video_id": "7xTGNNLPyMI"
+  },
+  {
+    "author": "Andrej Karpathy",
+    "channel": "Andrej Karpathy",
+    "channel_focus": [
+      "LLM internals",
+      "transformers",
+      "coding",
+      "deep learning"
+    ],
+    "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+    "channel_url": "https://www.youtube.com/@AndrejKarpathy",
+    "first_seen_at": "2026-05-11T14:30:46+00:00",
+    "published_at": "2024-06-09T23:31:35+00:00",
+    "relationship": "education",
+    "summary_status": "pending",
+    "title": "Let's reproduce GPT-2 (124M)",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-04T19:51:16+00:00",
+    "url": "https://www.youtube.com/watch?v=l8pRSuU81PU",
+    "video_id": "l8pRSuU81PU"
+  },
+  {
+    "author": "Andrej Karpathy",
+    "channel": "Andrej Karpathy",
+    "channel_focus": [
+      "LLM internals",
+      "transformers",
+      "coding",
+      "deep learning"
+    ],
+    "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+    "channel_url": "https://www.youtube.com/@AndrejKarpathy",
+    "first_seen_at": "2026-05-11T14:30:46+00:00",
+    "published_at": "2024-02-20T17:11:35+00:00",
+    "relationship": "education",
+    "summary_status": "pending",
+    "title": "Let's build the GPT Tokenizer",
+    "transcript_status": "pending",
+    "updated_at": "2026-04-13T20:44:04+00:00",
+    "url": "https://www.youtube.com/watch?v=zduSFxRajkE",
+    "video_id": "zduSFxRajkE"
+  },
+  {
+    "author": "Andrej Karpathy",
+    "channel": "Andrej Karpathy",
+    "channel_focus": [
+      "LLM internals",
+      "transformers",
+      "coding",
+      "deep learning"
+    ],
+    "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ",
+    "channel_url": "https://www.youtube.com/@AndrejKarpathy",
+    "first_seen_at": "2026-05-11T14:30:46+00:00",
+    "published_at": "2023-11-23T02:27:48+00:00",
+    "relationship": "education",
+    "summary_status": "pending",
+    "title": "[1hr Talk] Intro to Large Language Models",
+    "transcript_status": "pending",
+    "updated_at": "2026-05-04T17:41:01+00:00",
+    "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+    "video_id": "zjkBMFhNj_g"
   }
 ]
