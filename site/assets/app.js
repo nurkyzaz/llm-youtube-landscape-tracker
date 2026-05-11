@@ -1,5 +1,5 @@
 
-/* /Users/nurkyz/Desktop/tadreamk/site/tweaks-panel.jsx */
+/* /home/runner/work/llm-youtube-landscape-tracker/llm-youtube-landscape-tracker/site/tweaks-panel.jsx */
 (function(){
 const __TWEAKS_STYLE = `
   .twk-panel{position:fixed;right:16px;bottom:16px;z-index:2147483646;width:280px;
@@ -591,7 +591,7 @@ Object.assign(window, {
 })();
 
 
-/* /Users/nurkyz/Desktop/tadreamk/site/ui.jsx */
+/* /home/runner/work/llm-youtube-landscape-tracker/llm-youtube-landscape-tracker/site/ui.jsx */
 (function(){
 const {
   useState,
@@ -1776,7 +1776,7 @@ Object.assign(window, {
 })();
 
 
-/* /Users/nurkyz/Desktop/tadreamk/site/app.jsx */
+/* /home/runner/work/llm-youtube-landscape-tracker/llm-youtube-landscape-tracker/site/app.jsx */
 (function(){
 const {
   useState,

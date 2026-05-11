@@ -2494,13 +2494,29 @@ window.__DATA__ = {
       "channel": "LangChain",
       "vid": "PYJZJAna6pI",
       "title": "What if AI agents skipped language entirely to communicate?"
+    },
+    {
+      "t": 1778515397000,
+      "verb": "ingest",
+      "msg": "50 videos fetched, 0 new",
+      "channel": "LangChain",
+      "vid": "PYJZJAna6pI",
+      "title": "What if AI agents skipped language entirely to communicate?"
+    },
+    {
+      "t": 1778515397000,
+      "verb": "summarize",
+      "msg": "0 summaries completed, 0 queued/failed",
+      "channel": "LangChain",
+      "vid": "PYJZJAna6pI",
+      "title": "What if AI agents skipped language entirely to communicate?"
     }
   ],
   "META": {
     "source": "YouTube RSS + captions + transcript-backed summaries",
     "repository": "https://github.com/nurkyzaz/llm-youtube-landscape-tracker",
     "site": "https://nurkyzaz.github.io/llm-youtube-landscape-tracker/",
-    "lastUpdated": "2026-05-11T16:01:37+00:00",
-    "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; GitHub-hosted runners may be blocked by YouTube."
+    "lastUpdated": "2026-05-11T16:03:17+00:00",
+    "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; skipping hosted transcript fetch because YouTube blocks many cloud-runner IPs."
   }
 };
