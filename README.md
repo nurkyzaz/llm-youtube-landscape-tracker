@@ -5,6 +5,10 @@ language models. The pipeline watches YouTube RSS feeds, extracts captions,
 summarizes transcript-backed claims with GitHub Models, and publishes a static
 site through GitHub Pages.
 
+The published frontend is a React prototype wired to live generated data. The
+Python backend writes `site/data.js`, and the browser UI renders the searchable
+table, topic heatmap, channel relationship graph, and transcript evidence panel.
+
 ## Quick Start
 
 ```bash

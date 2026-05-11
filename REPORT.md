@@ -133,14 +133,24 @@ use the stronger AI summarizer when GitHub Models is available.
 
 I created `scripts/build_site.py`.
 
-It generates:
+The first version generated a simple static HTML table. After that, I received a
+separate design prototype as a zip file. I extracted the design files and wired
+them to the live backend instead of using the prototype's synthetic data.
+
+The current frontend uses:
 
 - `site/index.html`
-- `site/styles.css`
+- `site/app.jsx`
+- `site/ui.jsx`
+- `site/tweaks-panel.jsx`
+- `site/data.js`
 
 The site includes:
 
 - a landscape table of videos
+- a searchable/filterable React UI
+- a topic coverage heatmap
+- a channel relationship graph
 - who is speaking
 - topics covered
 - transcript-backed claims
@@ -150,6 +160,9 @@ The site includes:
 - short evidence snippets
 - update logs
 - counts for channels, videos, and completed summaries
+
+The backend writes `site/data.js` in the frontend's expected shape, so the
+browser interface is connected to the real watcher output rather than mock data.
 
 The site intentionally does not publish full transcripts. It only publishes
 summaries, short snippets, timestamps/status metadata, and source links.

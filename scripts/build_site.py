@@ -1,175 +1,273 @@
 from __future__ import annotations
 
 import argparse
-import html
-from collections import Counter
+import json
+from datetime import datetime, timezone
 from typing import Any
 
-from .common import CHANNELS_PATH, RUNS_PATH, SITE_DIR, VIDEOS_PATH, now_iso, read_json
+from .common import CHANNELS_PATH, RUNS_PATH, SITE_DIR, VIDEOS_PATH, read_json
+
+TOPIC_ORDER = [
+    "model releases",
+    "agents",
+    "RAG",
+    "evals",
+    "coding",
+    "research papers",
+    "tooling",
+    "safety",
+    "enterprise adoption",
+    "AI tools",
+    "multimodal",
+    "LLM applications",
+]
+
+STANCE_MAP = {
+    "optimistic": "hype",
+    "hype": "hype",
+    "skeptical": "skeptical",
+    "critical": "skeptical",
+    "mixed": "analytical",
+    "analytical": "analytical",
+    "tutorial": "analytical",
+    "descriptive": "neutral",
+    "neutral": "neutral",
+}
+
+MODEL_STOPWORDS = {"And", "The", "This", "They", "Can", "What", "Now", "Well", "Basically", "So", "There", "That"}
 
 
-def esc(value: Any) -> str:
-    return html.escape(str(value or ""))
+def parse_dt(value: str | None) -> datetime | None:
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc)
+    except ValueError:
+        return None
 
 
-def pill_list(items: list[str]) -> str:
-    return "".join(f"<span class='pill'>{esc(item)}</span>" for item in items[:6])
+def days_ago(value: str | None) -> int:
+    dt = parse_dt(value)
+    if not dt:
+        return 999
+    delta = datetime.now(timezone.utc) - dt
+    return max(0, delta.days)
 
 
-def video_row(video: dict[str, Any]) -> str:
-    summary = video.get("summary") or {}
-    topics = summary.get("topics") or video.get("channel_focus") or []
-    claims = summary.get("claims") or []
-    evidence = summary.get("evidence_snippets") or []
-    tools = summary.get("tools_models_mentioned") or []
-    status = video.get("summary_status", "pending")
-    return f"""
-    <tr>
-      <td>
-        <a href="{esc(video.get('url'))}">{esc(video.get('title'))}</a>
-        <div class="meta">{esc(video.get('published_at'))}</div>
-      </td>
-      <td>{esc(video.get('channel'))}<div class="meta">{esc(summary.get('speaker') or video.get('author'))}</div></td>
-      <td>{pill_list(topics)}</td>
-      <td>{esc(summary.get('summary') or video.get('summary_error') or 'Waiting for transcript and summary.')}</td>
-      <td><ul>{"".join(f"<li>{esc(claim)}</li>" for claim in claims[:3])}</ul></td>
-      <td>{pill_list(tools)}</td>
-      <td>{esc(video.get('relationship'))}<div class="meta">{esc(summary.get('channel_relationship'))}</div></td>
-      <td><span class="status {esc(status)}">{esc(status)}</span><div class="meta">{esc(video.get('transcript_status'))} via {esc(video.get('transcript_provider', 'n/a'))}</div></td>
-      <td><ul>{"".join(f"<li>{esc(item)}</li>" for item in evidence[:2])}</ul></td>
-    </tr>
-    """
+def clean_list(items: Any, fallback: list[str] | None = None) -> list[str]:
+    values = items if isinstance(items, list) else []
+    out: list[str] = []
+    for item in values:
+        text = str(item).strip()
+        if text and text not in out:
+            out.append(text)
+    return out or (fallback or [])
+
+
+def channel_key(index: int) -> str:
+    return chr(ord("A") + index) if index < 26 else f"C{index + 1}"
+
+
+def estimate_duration_minutes(video: dict[str, Any]) -> int:
+    chars = int(video.get("transcript_characters") or 0)
+    if chars <= 0:
+        return 0
+    return max(1, round(chars / 900))
+
+
+def map_stance(value: str | None) -> str:
+    return STANCE_MAP.get(str(value or "").lower(), "neutral")
+
+
+def clean_models(items: Any) -> list[str]:
+    models = []
+    for item in clean_list(items, ["LLM"]):
+        if item in MODEL_STOPWORDS or len(item) <= 1:
+            continue
+        models.append(item)
+    return models or ["LLM"]
+
+
+def video_to_frontend(video: dict[str, Any], channel_ids: dict[str, str]) -> dict[str, Any]:
+    summary = video.get("summary") if isinstance(video.get("summary"), dict) else {}
+    topics = clean_list(summary.get("topics"), clean_list(video.get("channel_focus"), ["LLM applications"]))
+    models = clean_models(summary.get("tools_models_mentioned"))
+    claims = clean_list(summary.get("claims"))
+    evidence = clean_list(summary.get("evidence_snippets"))
+    quote = evidence[0] if evidence else (claims[0] if claims else summary.get("summary", "Transcript summary pending."))
+    excerpt = summary.get("summary") or video.get("summary_error") or "Transcript-backed summary is queued for the next run."
+    published = parse_dt(video.get("published_at"))
+    channel_id = channel_ids.get(video.get("channel"), video.get("channel_id", "unknown"))
+
+    return {
+        "id": video.get("video_id"),
+        "sourceUrl": video.get("url"),
+        "channelId": channel_id,
+        "channel": video.get("channel"),
+        "title": video.get("title"),
+        "date": published.date().isoformat() if published else "",
+        "publishedAt": video.get("published_at"),
+        "daysAgo": days_ago(video.get("published_at")),
+        "duration": estimate_duration_minutes(video),
+        "views": 0,
+        "topics": topics,
+        "models": models,
+        "stance": map_stance(summary.get("stance")),
+        "relationship": video.get("relationship"),
+        "status": video.get("summary_status"),
+        "transcriptStatus": video.get("transcript_status"),
+        "transcriptProvider": video.get("transcript_provider", "n/a"),
+        "summaryProvider": summary.get("summary_provider", "pending"),
+        "new": days_ago(video.get("published_at")) < 2,
+        "transcript": {
+            "quote": str(quote)[:320],
+            "excerpt": str(excerpt)[:500],
+            "bullets": (claims or evidence or [excerpt])[:5],
+        },
+    }
+
+
+def build_channels(channels: list[dict[str, Any]], videos: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, str]]:
+    names = [channel["name"] for channel in channels]
+    for video in videos:
+        if video.get("channel") and video["channel"] not in names:
+            names.append(video["channel"])
+
+    by_name = {channel["name"]: channel for channel in channels}
+    frontend_channels: list[dict[str, Any]] = []
+    ids: dict[str, str] = {}
+    for index, name in enumerate(names):
+        source = by_name.get(name, {})
+        key = channel_key(index)
+        ids[name] = key
+        frontend_channels.append(
+            {
+                "id": key,
+                "name": name,
+                "desc": source.get("relationship", "LLM coverage"),
+                "focus": clean_list(source.get("focus"), ["LLM applications"]),
+                "subs": "tracked",
+                "cadence": "RSS",
+                "url": source.get("url", ""),
+            }
+        )
+    return frontend_channels, ids
+
+
+def build_topics(videos: list[dict[str, Any]], channels: list[dict[str, Any]]) -> list[str]:
+    seen: list[str] = []
+    for topic in TOPIC_ORDER:
+        if topic not in seen:
+            seen.append(topic)
+    for channel in channels:
+        for topic in clean_list(channel.get("focus")):
+            if topic not in seen:
+                seen.append(topic)
+    for video in videos:
+        summary = video.get("summary") if isinstance(video.get("summary"), dict) else {}
+        for topic in clean_list(summary.get("topics")):
+            if topic not in seen:
+                seen.append(topic)
+    return seen
+
+
+def build_models(frontend_videos: list[dict[str, Any]]) -> list[str]:
+    models: list[str] = []
+    for video in frontend_videos:
+        for model in video.get("models", []):
+            if model not in MODEL_STOPWORDS and len(model) > 1 and model not in models:
+                models.append(model)
+    return models or ["LLM"]
+
+
+def build_matrix(channels: list[dict[str, Any]], topics: list[str], videos: list[dict[str, Any]]) -> dict[str, dict[str, int]]:
+    matrix = {channel["id"]: {topic: 0 for topic in topics} for channel in channels}
+    for video in videos:
+        channel_id = video["channelId"]
+        if channel_id not in matrix:
+            continue
+        for topic in video.get("topics", []):
+            if topic in matrix[channel_id]:
+                matrix[channel_id][topic] += 1
+    return matrix
+
+
+def stage_message(run: dict[str, Any]) -> str:
+    stage = run.get("stage", "run")
+    if stage == "ingest":
+        return f"{run.get('fetched', 0)} videos fetched, {run.get('new_videos', 0)} new"
+    if stage == "summarize":
+        return f"{run.get('completed', 0)} summaries completed, {run.get('failed', 0)} queued/failed"
+    if stage == "transcribe":
+        return f"{run.get('available', 0)} transcripts available, {run.get('unavailable', 0)} unavailable"
+    return json.dumps({k: v for k, v in run.items() if k not in ["timestamp", "stage"]}, ensure_ascii=False)
+
+
+def build_log(runs: list[dict[str, Any]], videos: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    latest_video = videos[0] if videos else {}
+    log: list[dict[str, Any]] = []
+    for run in runs[-30:]:
+        dt = parse_dt(run.get("timestamp"))
+        log.append(
+            {
+                "t": int(dt.timestamp() * 1000) if dt else 0,
+                "verb": run.get("stage", "run"),
+                "msg": stage_message(run),
+                "channel": latest_video.get("channel", "tracker"),
+                "vid": latest_video.get("video_id", ""),
+                "title": latest_video.get("title", "Pipeline run"),
+            }
+        )
+    return log
+
+
+def write_data_js(payload: dict[str, Any]) -> None:
+    SITE_DIR.mkdir(parents=True, exist_ok=True)
+    body = json.dumps(payload, ensure_ascii=False, indent=2)
+    (SITE_DIR / "data.js").write_text(f"window.__DATA__ = {body};\n", encoding="utf-8")
+
+
+def ensure_design_files() -> None:
+    required = ["index.html", "app.jsx", "ui.jsx", "tweaks-panel.jsx"]
+    missing = [name for name in required if not (SITE_DIR / name).exists()]
+    if missing:
+        raise FileNotFoundError(f"Missing design files in site/: {', '.join(missing)}")
 
 
 def build_site() -> None:
-    SITE_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_design_files()
     channels = read_json(CHANNELS_PATH, [])
-    videos = read_json(VIDEOS_PATH, [])
+    backend_videos = read_json(VIDEOS_PATH, [])
     runs = read_json(RUNS_PATH, [])
-    completed = [video for video in videos if video.get("summary_status") == "complete"]
-    topic_counts = Counter(topic for video in completed for topic in (video.get("summary") or {}).get("topics", []))
-    relationship_counts = Counter(channel.get("relationship", "unknown") for channel in channels)
-    latest_run = runs[-1] if runs else {}
+    frontend_channels, channel_ids = build_channels(channels, backend_videos)
+    frontend_videos = [video_to_frontend(video, channel_ids) for video in backend_videos]
+    frontend_videos = [video for video in frontend_videos if video.get("id")]
+    topics = build_topics(backend_videos, channels)
+    models = build_models(frontend_videos)
+    matrix = build_matrix(frontend_channels, topics, frontend_videos)
+    log = build_log(runs, backend_videos)
 
-    html_doc = f"""<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LLM YouTube Landscape Tracker</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>LLM YouTube Landscape Tracker</h1>
-    <p>Transcript-backed monitoring of popular YouTube channels covering large language models.</p>
-    <div class="stats">
-      <span><strong>{len(channels)}</strong> channels watched</span>
-      <span><strong>{len(videos)}</strong> videos known</span>
-      <span><strong>{len(completed)}</strong> transcript-backed summaries</span>
-      <span><strong>{esc(latest_run.get('timestamp', 'not run yet'))}</strong> latest update</span>
-    </div>
-  </header>
-  <main>
-    <section>
-      <h2>Landscape Table</h2>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Video</th>
-              <th>Who is speaking</th>
-              <th>Topics</th>
-              <th>Summary</th>
-              <th>Transcript-backed claims</th>
-              <th>Tools/models</th>
-              <th>Channel relationship</th>
-              <th>Status</th>
-              <th>Evidence snippets</th>
-            </tr>
-          </thead>
-          <tbody>
-            {"".join(video_row(video) for video in videos)}
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <section class="grid">
-      <div>
-        <h2>How Data Is Collected</h2>
-        <ol>
-          <li>Resolve each YouTube handle to a channel ID.</li>
-          <li>Read the public YouTube RSS feed for recent videos.</li>
-          <li>Fetch English captions with youtube-transcript-api, then yt-dlp fallback.</li>
-          <li>Summarize transcript excerpts into a fixed JSON schema with GitHub Models.</li>
-          <li>Regenerate this static site and deploy with GitHub Pages.</li>
-        </ol>
-      </div>
-      <div>
-        <h2>Channel Relationships</h2>
-        <ul>
-          {"".join(f"<li><strong>{esc(name)}</strong>: {count}</li>" for name, count in relationship_counts.items())}
-        </ul>
-      </div>
-      <div>
-        <h2>Topic Mix</h2>
-        <ul>
-          {"".join(f"<li><strong>{esc(name)}</strong>: {count}</li>" for name, count in topic_counts.most_common()) or "<li>No summaries yet.</li>"}
-        </ul>
-      </div>
-      <div>
-        <h2>Update Log</h2>
-        <ul>
-          {"".join(f"<li><strong>{esc(run.get('timestamp'))}</strong> {esc(run.get('stage'))}: {esc({k: v for k, v in run.items() if k not in ['timestamp', 'stage']})}</li>" for run in runs[-8:]) or "<li>No runs yet.</li>"}
-        </ul>
-      </div>
-    </section>
-  </main>
-  <footer>
-    Built at {esc(now_iso())}. Source videos remain on YouTube; this page publishes only derived summaries and short evidence snippets.
-  </footer>
-</body>
-</html>
-"""
-    (SITE_DIR / "index.html").write_text(html_doc, encoding="utf-8")
-    (SITE_DIR / "styles.css").write_text(
-        """
-:root { color-scheme: light; --ink:#1d2433; --muted:#667085; --line:#d9dee8; --bg:#f7f8fb; --accent:#0f766e; --chip:#e8f3f1; }
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }
-header { padding: 32px 28px 20px; background: #fff; border-bottom: 1px solid var(--line); }
-h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: 0; }
-h2 { margin: 0 0 14px; font-size: 20px; }
-p { color: var(--muted); max-width: 900px; }
-main { padding: 24px 28px 40px; }
-.stats { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
-.stats span, .pill, .status { display: inline-flex; align-items: center; min-height: 28px; padding: 4px 9px; border: 1px solid var(--line); background: #fff; border-radius: 8px; font-size: 13px; }
-.table-wrap { overflow-x: auto; border: 1px solid var(--line); background: #fff; }
-table { width: 100%; min-width: 1500px; border-collapse: collapse; }
-th, td { padding: 12px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 14px; }
-th { position: sticky; top: 0; background: #eef2f7; text-align: left; color: #344054; }
-a { color: #075985; font-weight: 650; text-decoration: none; }
-ul, ol { margin: 0; padding-left: 18px; }
-li { margin-bottom: 6px; }
-.meta { margin-top: 6px; color: var(--muted); font-size: 12px; }
-.pill { margin: 0 4px 4px 0; background: var(--chip); border-color: #b8d8d2; color: #115e59; }
-.status.complete { background: #ecfdf3; border-color: #abefc6; color: #067647; }
-.status.failed { background: #fff1f3; border-color: #fea3b4; color: #c01048; }
-.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 24px; }
-.grid > div { background: #fff; border: 1px solid var(--line); padding: 18px; }
-footer { padding: 20px 28px; color: var(--muted); border-top: 1px solid var(--line); background: #fff; }
-@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } header, main, footer { padding-left: 16px; padding-right: 16px; } }
-""".strip()
-        + "\n",
-        encoding="utf-8",
-    )
+    payload = {
+        "CHANNELS": frontend_channels,
+        "TOPICS": topics,
+        "MODELS": models,
+        "VIDEOS": frontend_videos,
+        "MATRIX": matrix,
+        "INGEST_LOG": log,
+        "META": {
+            "source": "YouTube RSS + captions + transcript-backed summaries",
+            "repository": "https://github.com/nurkyzaz/llm-youtube-landscape-tracker",
+            "site": "https://nurkyzaz.github.io/llm-youtube-landscape-tracker/",
+        },
+    }
+    write_data_js(payload)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.parse_args()
     build_site()
-    print(f"Wrote {SITE_DIR / 'index.html'}")
+    print(f"Wrote {SITE_DIR / 'data.js'}")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,6 @@
 import unittest
+import json
+import re
 from pathlib import Path
 
 from scripts.build_site import build_site
@@ -35,7 +37,12 @@ class PipelineTests(unittest.TestCase):
     def test_build_site(self):
         build_site()
         html = Path("site/index.html").read_text(encoding="utf-8")
+        data_js = Path("site/data.js").read_text(encoding="utf-8")
+        payload = json.loads(re.sub(r"^window.__DATA__ = |;\n?$", "", data_js))
         self.assertIn("LLM YouTube Landscape Tracker", html)
+        self.assertIn("VIDEOS", payload)
+        self.assertIn("CHANNELS", payload)
+        self.assertIn("MATRIX", payload)
 
 
 if __name__ == "__main__":
