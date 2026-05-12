@@ -12,36 +12,50 @@ table, topic heatmap, pipeline log, and transcript evidence panel.
 
 ## Quick Start
 
+Local pipeline:
+
 ```bash
 python3 -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
-python -m scripts.ingest --limit-per-channel 3
-python -m scripts.summarize --max-videos 10
-python -m scripts.build_site
-python -m scripts.build_frontend
+./scripts/refresh.sh
 python -m http.server 8000 -d site
 ```
 
 Open <http://localhost:8000>.
 
 Without `GITHUB_TOKEN`, summaries fall back to a deterministic transcript-based
-heuristic so the site can still be built locally. In GitHub Actions, the
-workflow uses the repository token with `models: read` permissions.
+heuristic so the site can still be built locally. With `GITHUB_TOKEN`, the local
+refresh uses GitHub Models for transcript-backed summaries.
 
-## Production Refresh Requirements
+Deploy:
 
-GitHub-hosted runners often cannot fetch YouTube captions directly because
-YouTube blocks many cloud-provider IP ranges. For the scheduled tracker to keep
-summaries current, add these repository secrets:
+```bash
+git push
+```
 
-- `WEBSHARE_USER`
-- `WEBSHARE_PASS`
+GitHub Actions deploys the committed `site/` directory to GitHub Pages.
 
-The transcript client uses `youtube-transcript-api` with Webshare's native proxy
-configuration when those secrets are present. If they are missing, the site still
-builds, but the pipeline log and page metadata warn that hosted caption fetches
-may fail.
+## Refresh Workflow
+
+The tracker refresh runs locally with `./scripts/refresh.sh` because YouTube
+blocks many cloud-hosted runner IP ranges from fetching captions. The local
+script runs ingestion, transcript-backed summarization, static data generation,
+frontend bundling, then commits and pushes changed `data/` and `site/` files.
+GitHub Actions is deploy-only: it publishes whatever is already committed in
+`site/`.
+
+Optional proxy support remains in `scripts/transcribe.py` for contributors who
+already have a paid residential proxy plan, but this submission does not depend
+on proxy secrets.
+
+### Local Cron (Optional)
+
+Refresh every 6 hours from a residential host:
+
+```cron
+0 */6 * * * cd /Users/nurkyz/Desktop/tadreamk && /bin/bash ./scripts/refresh.sh >> refresh.log 2>&1
+```
 
 ## Deploy
 
@@ -49,8 +63,7 @@ may fail.
 2. Push this codebase.
 3. In repository settings, enable GitHub Pages with GitHub Actions as the
    source.
-4. Add `WEBSHARE_USER` and `WEBSHARE_PASS` repository secrets.
-5. Run the `Update tracker and publish site` workflow manually or wait for the
-   daily schedule.
+4. Run `./scripts/refresh.sh` locally when you want fresh data.
+5. Push changes; the deploy-only GitHub Actions workflow publishes `site/`.
 
 See [REPORT.md](REPORT.md) for methodology, evaluation notes, and limitations.

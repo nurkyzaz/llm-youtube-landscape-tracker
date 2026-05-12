@@ -139,6 +139,12 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(row["models"], ["LangGraph"])
         self.assertEqual(row["transcript"]["bullets"], ["The host builds an agent."])
 
+    def test_github_actions_workflow_is_deploy_only(self):
+        workflow = Path(".github/workflows/update-tracker.yml").read_text(encoding="utf-8")
+        self.assertNotIn("scripts.ingest", workflow)
+        self.assertNotIn("scripts.summarize", workflow)
+        self.assertNotIn("WEBSHARE_USER", workflow)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -22,12 +22,24 @@ infrastructure.
 What I used instead:
 
 - YouTube RSS feeds for video discovery.
-- GitHub Actions for scheduled automation.
+- A residential laptop refresh script for scheduled automation.
 - GitHub Pages for public hosting.
-- GitHub Models for AI summaries when the workflow runs on GitHub.
+- GitHub Models for AI summaries when a local token is available.
 
 This keeps the project free and easy to inspect because the full pipeline is in
 the public repository.
+
+### Hosting and refresh cadence
+
+The final architecture runs the full ingestion/transcription/summarization
+pipeline from a residential host, using `./scripts/refresh.sh` manually or from
+local cron. This choice is deliberate: YouTube blocks many cloud-runner IP ranges
+from caption access, and paid residential proxies are out of scope for a
+zero-cost submission.
+
+The "keeps running" requirement is satisfied by local cron plus `git push`: the
+laptop refreshes `data/` and `site/`, pushes the generated output, and GitHub
+Actions deploys only the already-built `site/` directory to GitHub Pages.
 
 ### 2. Checked the Local Environment
 
@@ -107,11 +119,11 @@ directory, so the fallback can still work.
 
 After the first GitHub Actions runs, I found a production-only problem: RSS
 ingestion worked, but caption fetching failed from GitHub-hosted runners because
-YouTube blocks many cloud-provider IP ranges. I wired
-`youtube-transcript-api` to `WebshareProxyConfig` when `WEBSHARE_USER` and
-`WEBSHARE_PASS` repository secrets are present. The workflow now passes those
-secrets into the summarization step, and missing secrets are recorded as a
-visible warning in the generated site metadata.
+YouTube blocks many cloud-provider IP ranges. The final fix was architectural:
+run the pipeline from a residential laptop and leave GitHub Actions as a
+deploy-only workflow. Optional Webshare proxy support remains in
+`scripts/transcribe.py` for contributors who already have paid residential
+proxy access, but this submission does not require it.
 
 ### 6. Built Transcript-Backed Summaries
 
@@ -136,8 +148,8 @@ summary and capitalized-word extraction. I replaced it with extractive sentence
 scoring and a curated model/tool allowlist, so degraded-mode summaries still use
 content-bearing transcript sentences rather than just title text.
 
-This means the pipeline can always build a useful table, while GitHub Actions can
-use the stronger AI summarizer when GitHub Models is available.
+This means the pipeline can always build a useful table, while a local refresh
+can use the stronger AI summarizer when GitHub Models is available.
 
 ### 7. Built the Public Site
 
@@ -177,31 +189,29 @@ longer ships development React or in-browser Babel.
 
 I also removed the misleading "live" animation. The header now shows the actual
 last pipeline update timestamp from generated metadata. The site updates when
-GitHub Actions commits new data and deploys GitHub Pages.
+the local refresh script pushes new generated data and GitHub Actions deploys
+GitHub Pages.
 
 The site intentionally does not publish full transcripts. It only publishes
 summaries, short snippets, timestamps/status metadata, and source links.
 
-### 8. Added GitHub Actions Automation
+### 8. Added GitHub Pages Deployment
 
 I created `.github/workflows/update-tracker.yml`.
 
-The workflow runs every day and can also be started manually. It performs:
+The first version tried to run the whole tracker in GitHub Actions. That failed
+for transcript fetching because of cloud IP blocking. I replaced it with a
+deploy-only workflow. It performs:
 
-1. Install Python dependencies.
-2. Run ingestion.
-3. Summarize pending transcript-backed videos.
-4. Build the static site.
-5. Build the frontend bundle.
-6. Commit updated `data/` and `site/` files.
-7. Deploy the site to GitHub Pages.
+1. Checkout.
+2. Configure Pages.
+3. Upload the existing `site/` artifact.
+4. Deploy the site to GitHub Pages.
 
 The workflow uses these permissions:
 
-- `contents: write`
 - `pages: write`
 - `id-token: write`
-- `models: read`
 
 ### 9. Tested the Pipeline
 
@@ -212,6 +222,7 @@ The tests check:
 - RSS fixture parsing.
 - Merging new videos without losing previous summaries.
 - Webshare proxy configuration.
+- Deploy-only workflow shape.
 - GitHub Models response parsing.
 - Extractive fallback summary quality.
 - Static site data generation.
@@ -285,8 +296,8 @@ I evaluated the project in these ways:
 3. Schema validity: ensure summaries always include the expected fields.
 4. Site rendering: confirm the generated browser page contains the table and
    source links.
-5. Automation health: confirm the GitHub Actions workflow completes and deploys
-   GitHub Pages.
+5. Automation health: confirm local refresh updates generated files and GitHub
+   Actions deploys GitHub Pages.
 
 ## Experimental Results
 
@@ -297,9 +308,8 @@ The current implementation produced these results:
 - 7 transcript-backed summaries generated locally.
 - GitHub repository created and pushed successfully.
 - GitHub Pages enabled.
-- The scheduled/manual workflow completed successfully.
-- The production workflow is now wired for Webshare proxy credentials, which are
-  required for GitHub-hosted runners to fetch captions reliably.
+- The local refresh path generated model-backed summaries.
+- The deploy-only GitHub Actions workflow completed successfully.
 
 The generated table shows which creator/channel is speaking, what LLM topics are
 covered, the transcript-backed summary, claims, and evidence snippets.
@@ -307,8 +317,10 @@ covered, the transcript-backed summary, claims, and evidence snippets.
 ## Limitations
 
 - Some videos do not have captions immediately, so they are retried later.
-- YouTube may rate-limit or block transcript extraction from cloud IP ranges; the
-  production workflow expects Webshare proxy secrets.
+- YouTube may rate-limit or block transcript extraction from cloud IP ranges.
+- Fully automated hosted refresh requires either paid residential proxies or a
+  self-hosted/residential runner; both are out of scope for this zero-cost
+  submission.
 - GitHub Models can be rate-limited or unavailable depending on repository
   access and GitHub account settings.
 - Speaker and guest detection is best-effort.

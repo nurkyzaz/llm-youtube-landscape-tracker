@@ -546,7 +546,7 @@ window.__DATA__ = {
       "title": "Codex Now Has \"AI Pets\"",
       "date": "2026-05-09",
       "publishedAt": "2026-05-09T18:57:28+00:00",
-      "daysAgo": 1,
+      "daysAgo": 2,
       "duration": 1,
       "views": 0,
       "topics": [
@@ -563,7 +563,7 @@ window.__DATA__ = {
       "transcriptStatus": "available",
       "transcriptProvider": "youtube-transcript-api",
       "summaryProvider": "openai/gpt-4o-mini",
-      "new": true,
+      "new": false,
       "transcript": {
         "quote": "OpenAI released pets inside of Codeex... it's this little like cloud robot character... you can customize what you want your pet to look like.",
         "excerpt": "Matt Wolfe discusses the new 'AI Pets' feature in OpenAI's Codex, highlighting its customization options and the community aspect of pet creation. He expresses enthusiasm about the innovative capabilities of Codex.",
@@ -580,7 +580,7 @@ window.__DATA__ = {
       "title": "Vibe coding works… until your agent confidently builds the wrong thing",
       "date": "2026-05-08",
       "publishedAt": "2026-05-08T21:57:20+00:00",
-      "daysAgo": 2,
+      "daysAgo": 3,
       "duration": 1,
       "views": 0,
       "topics": [
@@ -614,7 +614,7 @@ window.__DATA__ = {
       "title": "OpenAI's ChatGPT 5.5 Instant: The Good, The Bad And The Insane",
       "date": "2026-05-08",
       "publishedAt": "2026-05-08T16:46:30+00:00",
-      "daysAgo": 2,
+      "daysAgo": 3,
       "duration": 7,
       "views": 0,
       "topics": [
@@ -653,7 +653,7 @@ window.__DATA__ = {
       "title": "New ChatGPT Model & Memory Features Explained (AI News You Can Use)",
       "date": "2026-05-08",
       "publishedAt": "2026-05-08T16:13:15+00:00",
-      "daysAgo": 2,
+      "daysAgo": 3,
       "duration": 16,
       "views": 0,
       "topics": [
@@ -836,7 +836,7 @@ window.__DATA__ = {
       "title": "Your AI Setup Needs This",
       "date": "2026-05-06",
       "publishedAt": "2026-05-06T19:00:00+00:00",
-      "daysAgo": 4,
+      "daysAgo": 5,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -871,7 +871,7 @@ window.__DATA__ = {
       "title": "Build A Second Brain That Remembers Everything",
       "date": "2026-05-06",
       "publishedAt": "2026-05-06T18:19:41+00:00",
-      "daysAgo": 4,
+      "daysAgo": 5,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -906,7 +906,7 @@ window.__DATA__ = {
       "title": "DeepSeek V4 AI Beats Billion Dollar Systems…For Free",
       "date": "2026-05-06",
       "publishedAt": "2026-05-06T16:07:54+00:00",
-      "daysAgo": 4,
+      "daysAgo": 5,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1045,7 +1045,7 @@ window.__DATA__ = {
       "title": "Just deployed to production… and leaked all the credit cards 😬",
       "date": "2026-05-05",
       "publishedAt": "2026-05-05T19:00:49+00:00",
-      "daysAgo": 5,
+      "daysAgo": 6,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1080,7 +1080,7 @@ window.__DATA__ = {
       "title": "LangChain Live Stream",
       "date": "2026-05-04",
       "publishedAt": "2026-05-04T18:42:04+00:00",
-      "daysAgo": 6,
+      "daysAgo": 7,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1150,7 +1150,7 @@ window.__DATA__ = {
       "title": "NVIDIA's New AI Turns One Photo Into A World That Never Breaks",
       "date": "2026-05-03",
       "publishedAt": "2026-05-03T17:02:48+00:00",
-      "daysAgo": 7,
+      "daysAgo": 8,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1219,7 +1219,7 @@ window.__DATA__ = {
       "title": "OpenAI Codex Can Now Use Your Computer! (Full Breakdown + Testing)",
       "date": "2026-05-01",
       "publishedAt": "2026-05-01T17:06:48+00:00",
-      "daysAgo": 9,
+      "daysAgo": 10,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1254,7 +1254,7 @@ window.__DATA__ = {
       "title": "Sakana AI’s God Simulator Is Brilliant",
       "date": "2026-05-01",
       "publishedAt": "2026-05-01T16:43:34+00:00",
-      "daysAgo": 9,
+      "daysAgo": 10,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1288,7 +1288,7 @@ window.__DATA__ = {
       "title": "Solved: The Bug That Haunted AI Video For Years",
       "date": "2026-04-28",
       "publishedAt": "2026-04-28T17:16:01+00:00",
-      "daysAgo": 12,
+      "daysAgo": 13,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1392,7 +1392,7 @@ window.__DATA__ = {
       "title": "GPT 5.5 Arrives, DeepSeek V4 Drops, and the Compute War Intensifies",
       "date": "2026-04-24",
       "publishedAt": "2026-04-24T18:45:02+00:00",
-      "daysAgo": 16,
+      "daysAgo": 17,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1427,7 +1427,7 @@ window.__DATA__ = {
       "title": "ChatGPT Just Changed Forever...",
       "date": "2026-04-24",
       "publishedAt": "2026-04-24T17:09:47+00:00",
-      "daysAgo": 16,
+      "daysAgo": 17,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1497,7 +1497,7 @@ window.__DATA__ = {
       "title": "Claude Opus 4.7 - A New Frontier, in Performance … and Drama",
       "date": "2026-04-17",
       "publishedAt": "2026-04-17T18:07:46+00:00",
-      "daysAgo": 23,
+      "daysAgo": 24,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1532,7 +1532,7 @@ window.__DATA__ = {
       "title": "Claude Mythos: Highlights from 244-page Release",
       "date": "2026-04-08",
       "publishedAt": "2026-04-08T17:39:20+00:00",
-      "daysAgo": 32,
+      "daysAgo": 33,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1567,7 +1567,7 @@ window.__DATA__ = {
       "title": "Two AI Models Set to “stir government urgency”, But Will This Challenge Undo Them?",
       "date": "2026-03-26",
       "publishedAt": "2026-03-26T20:15:12+00:00",
-      "daysAgo": 45,
+      "daysAgo": 46,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1602,7 +1602,7 @@ window.__DATA__ = {
       "title": "I BUILT A FULLY AUTOMATIC MANSPLAINER",
       "date": "2026-03-06",
       "publishedAt": "2026-03-06T22:07:33+00:00",
-      "daysAgo": 65,
+      "daysAgo": 66,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1637,7 +1637,7 @@ window.__DATA__ = {
       "title": "What the New ChatGPT 5.4 Means for the World",
       "date": "2026-03-06",
       "publishedAt": "2026-03-06T16:25:26+00:00",
-      "daysAgo": 65,
+      "daysAgo": 66,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1777,7 +1777,7 @@ window.__DATA__ = {
       "title": "Titans: Learning to Memorize at Test Time (Paper Analysis)",
       "date": "2025-12-14",
       "publishedAt": "2025-12-14T16:22:15+00:00",
-      "daysAgo": 147,
+      "daysAgo": 148,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1812,7 +1812,7 @@ window.__DATA__ = {
       "title": "How I use LLMs",
       "date": "2025-02-27",
       "publishedAt": "2025-02-27T22:29:56+00:00",
-      "daysAgo": 437,
+      "daysAgo": 438,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1847,7 +1847,7 @@ window.__DATA__ = {
       "title": "Deep Dive into LLMs like ChatGPT",
       "date": "2025-02-05",
       "publishedAt": "2025-02-05T18:23:47+00:00",
-      "daysAgo": 459,
+      "daysAgo": 460,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1882,7 +1882,7 @@ window.__DATA__ = {
       "title": "Let's reproduce GPT-2 (124M)",
       "date": "2024-06-09",
       "publishedAt": "2024-06-09T23:31:35+00:00",
-      "daysAgo": 700,
+      "daysAgo": 701,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1917,7 +1917,7 @@ window.__DATA__ = {
       "title": "Let's build the GPT Tokenizer",
       "date": "2024-02-20",
       "publishedAt": "2024-02-20T17:11:35+00:00",
-      "daysAgo": 810,
+      "daysAgo": 811,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1952,7 +1952,7 @@ window.__DATA__ = {
       "title": "[1hr Talk] Intro to Large Language Models",
       "date": "2023-11-23",
       "publishedAt": "2023-11-23T02:27:48+00:00",
-      "daysAgo": 900,
+      "daysAgo": 901,
       "duration": 0,
       "views": 0,
       "topics": [
