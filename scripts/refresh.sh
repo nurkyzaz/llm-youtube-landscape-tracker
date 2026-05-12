@@ -2,7 +2,9 @@
 # Local refresh entrypoint. Run this from a residential IP; GitHub Actions only deploys the generated site.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-source .venv/bin/activate 2>/dev/null || true
+if [ -f .venv/bin/activate ]; then
+  source .venv/bin/activate
+fi
 python -m scripts.ingest --limit-per-channel 5
 python -m scripts.summarize --max-videos 12
 python -m scripts.build_site
