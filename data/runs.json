@@ -124,5 +124,59 @@
     "stage": "summarize",
     "timestamp": "2026-05-11T16:03:17+00:00",
     "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; skipping hosted transcript fetch because YouTube blocks many cloud-runner IPs."
+  },
+  {
+    "channels": 10,
+    "failures": [
+      {
+        "channel": "Matt Wolfe",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UChpleBmo18P08aKCIgti38g"
+      },
+      {
+        "channel": "Two Minute Papers",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg"
+      },
+      {
+        "channel": "Andrej Karpathy",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ"
+      },
+      {
+        "channel": "AI Explained",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCNJ1Ymd5yFuUPtn21xtRbbw"
+      },
+      {
+        "channel": "The AI Advantage",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCHhYXsLBEVVnbvsq57n1MTQ"
+      },
+      {
+        "channel": "IBM Technology",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCKWaEZ-_VweaEx1j62do_vQ"
+      },
+      {
+        "channel": "LangChain",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCC-lyoTfSrcJzA1ab3APAgw"
+      },
+      {
+        "channel": "AssemblyAI",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCtatfZMf-8EkIwASXM4ts0A"
+      },
+      {
+        "channel": "DeepLearning.AI",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCcIXc5mJsHVYTZR1maL5l9w"
+      }
+    ],
+    "fetched": 5,
+    "new_videos": 0,
+    "stage": "ingest",
+    "timestamp": "2026-05-12T03:04:39+00:00"
+  },
+  {
+    "attempted": 12,
+    "completed": 0,
+    "failed": 12,
+    "proxy_configured": false,
+    "stage": "summarize",
+    "timestamp": "2026-05-12T03:04:39+00:00",
+    "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; GitHub-hosted runners may be blocked by YouTube."
   }
 ]

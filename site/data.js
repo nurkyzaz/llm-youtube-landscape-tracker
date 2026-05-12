@@ -787,9 +787,9 @@ window.__DATA__ = {
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=trEM9OKr5Sc! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=trEM9OKr5Sc! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th"
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -822,9 +822,9 @@ window.__DATA__ = {
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=ZrHKwxasXS4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=ZrHKwxasXS4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th"
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -857,9 +857,9 @@ window.__DATA__ = {
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=z7EE9VWKrCA! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=z7EE9VWKrCA! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th"
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -892,9 +892,9 @@ window.__DATA__ = {
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=yke4fLQUsh4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "\nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=yke4fLQUsh4! This is most likely caused by:\n\nYouTube is blocking requests from your IP. This usually is due to one of the following reasons:\n- You have done too many requests and your IP has been blocked by YouTube\n- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.\n\nWays to work around th"
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -919,16 +919,16 @@ window.__DATA__ = {
       ],
       "stance": "neutral",
       "relationship": "research explainer",
-      "status": "pending",
-      "transcriptStatus": "pending",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
       "transcriptProvider": "n/a",
       "summaryProvider": "pending",
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "Transcript-backed summary is queued for the next run.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "Transcript-backed summary is queued for the next run."
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -954,16 +954,16 @@ window.__DATA__ = {
       ],
       "stance": "neutral",
       "relationship": "education",
-      "status": "pending",
-      "transcriptStatus": "pending",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
       "transcriptProvider": "n/a",
       "summaryProvider": "pending",
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "Transcript-backed summary is queued for the next run.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "Transcript-backed summary is queued for the next run."
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -989,16 +989,16 @@ window.__DATA__ = {
       ],
       "stance": "neutral",
       "relationship": "framework/vendor",
-      "status": "pending",
-      "transcriptStatus": "pending",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
       "transcriptProvider": "n/a",
       "summaryProvider": "pending",
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "Transcript-backed summary is queued for the next run.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "Transcript-backed summary is queued for the next run."
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -1024,16 +1024,16 @@ window.__DATA__ = {
       ],
       "stance": "neutral",
       "relationship": "enterprise explainer",
-      "status": "pending",
-      "transcriptStatus": "pending",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
       "transcriptProvider": "n/a",
       "summaryProvider": "pending",
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "Transcript-backed summary is queued for the next run.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "Transcript-backed summary is queued for the next run."
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -1059,16 +1059,16 @@ window.__DATA__ = {
       ],
       "stance": "neutral",
       "relationship": "education",
-      "status": "pending",
-      "transcriptStatus": "pending",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
       "transcriptProvider": "n/a",
       "summaryProvider": "pending",
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "Transcript-backed summary is queued for the next run.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "Transcript-backed summary is queued for the next run."
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -1094,16 +1094,16 @@ window.__DATA__ = {
       ],
       "stance": "neutral",
       "relationship": "framework/vendor",
-      "status": "pending",
-      "transcriptStatus": "pending",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
       "transcriptProvider": "n/a",
       "summaryProvider": "pending",
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "Transcript-backed summary is queued for the next run.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "Transcript-backed summary is queued for the next run."
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -1129,16 +1129,16 @@ window.__DATA__ = {
       ],
       "stance": "neutral",
       "relationship": "framework/vendor",
-      "status": "pending",
-      "transcriptStatus": "pending",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
       "transcriptProvider": "n/a",
       "summaryProvider": "pending",
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "Transcript-backed summary is queued for the next run.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "Transcript-backed summary is queued for the next run."
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -1163,16 +1163,16 @@ window.__DATA__ = {
       ],
       "stance": "neutral",
       "relationship": "research explainer",
-      "status": "pending",
-      "transcriptStatus": "pending",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
       "transcriptProvider": "n/a",
       "summaryProvider": "pending",
       "new": false,
       "transcript": {
         "quote": "Transcript summary pending.",
-        "excerpt": "Transcript-backed summary is queued for the next run.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
         "bullets": [
-          "Transcript-backed summary is queued for the next run."
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
         ]
       }
     },
@@ -2510,13 +2510,29 @@ window.__DATA__ = {
       "channel": "LangChain",
       "vid": "PYJZJAna6pI",
       "title": "What if AI agents skipped language entirely to communicate?"
+    },
+    {
+      "t": 1778555079000,
+      "verb": "ingest",
+      "msg": "5 videos fetched, 0 new",
+      "channel": "LangChain",
+      "vid": "PYJZJAna6pI",
+      "title": "What if AI agents skipped language entirely to communicate?"
+    },
+    {
+      "t": 1778555079000,
+      "verb": "summarize",
+      "msg": "0 summaries completed, 12 queued/failed",
+      "channel": "LangChain",
+      "vid": "PYJZJAna6pI",
+      "title": "What if AI agents skipped language entirely to communicate?"
     }
   ],
   "META": {
     "source": "YouTube RSS + captions + transcript-backed summaries",
     "repository": "https://github.com/nurkyzaz/llm-youtube-landscape-tracker",
     "site": "https://nurkyzaz.github.io/llm-youtube-landscape-tracker/",
-    "lastUpdated": "2026-05-11T16:03:17+00:00",
-    "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; skipping hosted transcript fetch because YouTube blocks many cloud-runner IPs."
+    "lastUpdated": "2026-05-12T03:04:39+00:00",
+    "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; GitHub-hosted runners may be blocked by YouTube."
   }
 };
