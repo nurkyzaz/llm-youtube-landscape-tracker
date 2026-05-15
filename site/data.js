@@ -181,6 +181,7 @@ window.__DATA__ = {
     "predictive AI"
   ],
   "MODELS": [
+    "LLM",
     "RLMs",
     "Anthropic cloud family orchestrator",
     "Nvidia Blackwell GPUs",
@@ -213,10 +214,149 @@ window.__DATA__ = {
     "GPT 5.5 Instant",
     "GPT Realtime 2",
     "Bob",
-    "IBM automation products",
-    "LLM"
+    "IBM automation products"
   ],
   "VIDEOS": [
+    {
+      "id": "4R5mFLujbi8",
+      "sourceUrl": "https://www.youtube.com/watch?v=4R5mFLujbi8",
+      "channelId": "J",
+      "channel": "DeepLearning.AI",
+      "title": "Data is hungry for context",
+      "date": "2026-05-14",
+      "publishedAt": "2026-05-14T17:26:16+00:00",
+      "daysAgo": 0,
+      "duration": 0,
+      "views": 0,
+      "topics": [
+        "courses",
+        "interviews",
+        "LLM concepts",
+        "AI engineering"
+      ],
+      "models": [
+        "LLM"
+      ],
+      "stance": "neutral",
+      "relationship": "education",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
+      "transcriptProvider": "n/a",
+      "summaryProvider": "pending",
+      "new": true,
+      "transcript": {
+        "quote": "Transcript summary pending.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
+        "bullets": [
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
+        ]
+      }
+    },
+    {
+      "id": "FlZyO4HvQJc",
+      "sourceUrl": "https://www.youtube.com/watch?v=FlZyO4HvQJc",
+      "channelId": "J",
+      "channel": "DeepLearning.AI",
+      "title": "Why AI keeps lying to you",
+      "date": "2026-05-13",
+      "publishedAt": "2026-05-13T18:31:17+00:00",
+      "daysAgo": 1,
+      "duration": 0,
+      "views": 0,
+      "topics": [
+        "courses",
+        "interviews",
+        "LLM concepts",
+        "AI engineering"
+      ],
+      "models": [
+        "LLM"
+      ],
+      "stance": "neutral",
+      "relationship": "education",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
+      "transcriptProvider": "n/a",
+      "summaryProvider": "pending",
+      "new": true,
+      "transcript": {
+        "quote": "Transcript summary pending.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
+        "bullets": [
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
+        ]
+      }
+    },
+    {
+      "id": "20qpc5m5Pko",
+      "sourceUrl": "https://www.youtube.com/watch?v=20qpc5m5Pko",
+      "channelId": "J",
+      "channel": "DeepLearning.AI",
+      "title": "Inside AI Dev 26 × San Francisco",
+      "date": "2026-05-12",
+      "publishedAt": "2026-05-12T19:45:58+00:00",
+      "daysAgo": 2,
+      "duration": 0,
+      "views": 0,
+      "topics": [
+        "courses",
+        "interviews",
+        "LLM concepts",
+        "AI engineering"
+      ],
+      "models": [
+        "LLM"
+      ],
+      "stance": "neutral",
+      "relationship": "education",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
+      "transcriptProvider": "n/a",
+      "summaryProvider": "pending",
+      "new": false,
+      "transcript": {
+        "quote": "Transcript summary pending.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
+        "bullets": [
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
+        ]
+      }
+    },
+    {
+      "id": "4R4xhb_Q0-A",
+      "sourceUrl": "https://www.youtube.com/watch?v=4R4xhb_Q0-A",
+      "channelId": "J",
+      "channel": "DeepLearning.AI",
+      "title": "The Ultimate Transformer Course for Working Engineers",
+      "date": "2026-05-12",
+      "publishedAt": "2026-05-12T14:25:03+00:00",
+      "daysAgo": 2,
+      "duration": 0,
+      "views": 0,
+      "topics": [
+        "courses",
+        "interviews",
+        "LLM concepts",
+        "AI engineering"
+      ],
+      "models": [
+        "LLM"
+      ],
+      "stance": "neutral",
+      "relationship": "education",
+      "status": "failed",
+      "transcriptStatus": "transcript_unavailable",
+      "transcriptProvider": "n/a",
+      "summaryProvider": "pending",
+      "new": false,
+      "transcript": {
+        "quote": "Transcript summary pending.",
+        "excerpt": "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed",
+        "bullets": [
+          "No module named 'youtube_transcript_api'; fallback failed: yt-dlp is not installed"
+        ]
+      }
+    },
     {
       "id": "PYJZJAna6pI",
       "sourceUrl": "https://www.youtube.com/watch?v=PYJZJAna6pI",
@@ -225,7 +365,7 @@ window.__DATA__ = {
       "title": "What if AI agents skipped language entirely to communicate?",
       "date": "2026-05-11",
       "publishedAt": "2026-05-11T14:00:47+00:00",
-      "daysAgo": 0,
+      "daysAgo": 3,
       "duration": 1,
       "views": 0,
       "topics": [
@@ -243,7 +383,7 @@ window.__DATA__ = {
       "transcriptStatus": "available",
       "transcriptProvider": "youtube-transcript-api",
       "summaryProvider": "openai/gpt-4o-mini",
-      "new": true,
+      "new": false,
       "transcript": {
         "quote": "We're very excited around like RLMs and like intricate ways of doing context management.",
         "excerpt": "The video discusses the potential of RLMs to enhance communication efficiency through KV cache management. It explores the balance between closed source and open source models in this context.",
@@ -260,7 +400,7 @@ window.__DATA__ = {
       "title": "AI Is Being Built Into New Homes",
       "date": "2026-05-11",
       "publishedAt": "2026-05-11T12:27:39+00:00",
-      "daysAgo": 0,
+      "daysAgo": 3,
       "duration": 1,
       "views": 0,
       "topics": [
@@ -278,7 +418,7 @@ window.__DATA__ = {
       "transcriptStatus": "available",
       "transcriptProvider": "youtube-transcript-api",
       "summaryProvider": "openai/gpt-4o-mini",
-      "new": true,
+      "new": false,
       "transcript": {
         "quote": "It's going to be like internet or cable. you're just going to have like an AI module built onto your house.",
         "excerpt": "The video discusses the integration of AI into new homes through mini data centers, allowing homeowners to run AI workloads. This setup could enable users to monetize their excess computing power, drawing parallels to blockchain mining.",
@@ -296,7 +436,7 @@ window.__DATA__ = {
       "title": "Predictive vs Generative AI: How They Work and When to Use Each",
       "date": "2026-05-11",
       "publishedAt": "2026-05-11T11:01:31+00:00",
-      "daysAgo": 0,
+      "daysAgo": 3,
       "duration": 9,
       "views": 0,
       "topics": [
@@ -315,7 +455,7 @@ window.__DATA__ = {
       "transcriptStatus": "available",
       "transcriptProvider": "youtube-transcript-api",
       "summaryProvider": "openai/gpt-4o-mini",
-      "new": true,
+      "new": false,
       "transcript": {
         "quote": "Predictive AI is about making predictions about specific measurable things. (0:30)",
         "excerpt": "The video explains the differences between predictive and generative AI, emphasizing that while predictive AI focuses on forecasting measurable outcomes, generative AI is about creating new content. It highlights the role of large language models as primarily generative tools, despite their predictive functionalities.",
@@ -333,7 +473,7 @@ window.__DATA__ = {
       "title": "Voice AI: Beyond Transcription with Granola, CoLoop & EdgeTier",
       "date": "2026-05-11",
       "publishedAt": "2026-05-11T04:04:15+00:00",
-      "daysAgo": 0,
+      "daysAgo": 4,
       "duration": 50,
       "views": 0,
       "topics": [
@@ -352,7 +492,7 @@ window.__DATA__ = {
       "transcriptStatus": "available",
       "transcriptProvider": "youtube-transcript-api",
       "summaryProvider": "openai/gpt-4o-mini",
-      "new": true,
+      "new": false,
       "transcript": {
         "quote": "We build voice AI models for developers. (0:00)",
         "excerpt": "The video features a panel discussion moderated by Ryan from Assembly AI, focusing on the applications and challenges of voice AI in various companies. Panelists from Kodoop, EdgeTier, and Granola share insights on how they leverage voice AI for transcription and customer insights, emphasizing the importance of accurate speaker identification and real-time processing.",
@@ -371,7 +511,7 @@ window.__DATA__ = {
       "title": "The Future IS Speaker Identification 🚀",
       "date": "2026-05-11",
       "publishedAt": "2026-05-11T04:03:56+00:00",
-      "daysAgo": 0,
+      "daysAgo": 4,
       "duration": 1,
       "views": 0,
       "topics": [
@@ -388,7 +528,7 @@ window.__DATA__ = {
       "transcriptStatus": "available",
       "transcriptProvider": "youtube-transcript-api",
       "summaryProvider": "openai/gpt-4o-mini",
-      "new": true,
+      "new": false,
       "transcript": {
         "quote": "Speaker identification and diarization is probably the most exciting thing for us.",
         "excerpt": "The video discusses the excitement around speaker identification and diarization in voice technology. The host emphasizes the challenges of real-time diarization and the potential benefits of overcoming these hurdles.",
@@ -405,7 +545,7 @@ window.__DATA__ = {
       "title": "Into the Future: Better Language Support 🌍",
       "date": "2026-05-11",
       "publishedAt": "2026-05-11T04:02:15+00:00",
-      "daysAgo": 0,
+      "daysAgo": 4,
       "duration": 1,
       "views": 0,
       "topics": [
@@ -423,7 +563,7 @@ window.__DATA__ = {
       "transcriptStatus": "available",
       "transcriptProvider": "youtube-transcript-api",
       "summaryProvider": "openai/gpt-4o-mini",
-      "new": true,
+      "new": false,
       "transcript": {
         "quote": "the most exciting thing is like global language support across all languages (0:10)",
         "excerpt": "The video discusses the importance of global language support in large language models, particularly for lower resource languages. AssemblyAI emphasizes the need for effective transcription solutions to cater to diverse user bases.",
@@ -440,7 +580,7 @@ window.__DATA__ = {
       "title": "3 Product Use Cases for Real-time (CoLoop) ⚡️",
       "date": "2026-05-11",
       "publishedAt": "2026-05-11T04:00:46+00:00",
-      "daysAgo": 0,
+      "daysAgo": 4,
       "duration": 2,
       "views": 0,
       "topics": [
@@ -457,7 +597,7 @@ window.__DATA__ = {
       "transcriptStatus": "available",
       "transcriptProvider": "youtube-transcript-api",
       "summaryProvider": "openai/gpt-4o-mini",
-      "new": true,
+      "new": false,
       "transcript": {
         "quote": "providing a backroom for clients to... get transcription of what's going on (0:15)",
         "excerpt": "The video discusses three use cases for real-time transcription in research and interviews, emphasizing its potential to enhance stakeholder engagement and support moderators. It also explores the concept of AI moderation for conducting interviews autonomously.",
@@ -475,7 +615,7 @@ window.__DATA__ = {
       "title": "Real-Time vs Post-Call: Behind EdgeTier's Architecture 💡",
       "date": "2026-05-11",
       "publishedAt": "2026-05-11T03:57:57+00:00",
-      "daysAgo": 0,
+      "daysAgo": 4,
       "duration": 2,
       "views": 0,
       "topics": [
@@ -493,7 +633,7 @@ window.__DATA__ = {
       "transcriptStatus": "available",
       "transcriptProvider": "youtube-transcript-api",
       "summaryProvider": "openai/gpt-4o-mini",
-      "new": true,
+      "new": false,
       "transcript": {
         "quote": "We haven't really gone there... this is like a complex mess of horrible integrations to APIs on old legacy call systems. (0:00-0:30)",
         "excerpt": "The video discusses the challenges of implementing real-time transcription in contact centers due to legacy systems. It highlights the importance of quick access to transcripts for analyzing call trends and responding to unusual patterns.",
@@ -510,7 +650,7 @@ window.__DATA__ = {
       "title": "Agentic Consent Explained: How AI Agents Act Safely and Responsibly",
       "date": "2026-05-10",
       "publishedAt": "2026-05-10T11:00:47+00:00",
-      "daysAgo": 1,
+      "daysAgo": 4,
       "duration": 12,
       "views": 0,
       "topics": [
@@ -528,7 +668,7 @@ window.__DATA__ = {
       "transcriptStatus": "available",
       "transcriptProvider": "youtube-transcript-api",
       "summaryProvider": "openai/gpt-4o-mini",
-      "new": true,
+      "new": false,
       "transcript": {
         "quote": "Agentic consent defines who delegated the authority, what actions are permitted, and the scope and lifetime of that delegation.",
         "excerpt": "The video explains the concept of agentic consent, emphasizing its importance in ensuring that AI agents operate safely and responsibly. It highlights the need for dynamic and context-aware consent mechanisms that adapt to changing scenarios, ensuring that agents act in alignment with user intentions.",
@@ -546,7 +686,7 @@ window.__DATA__ = {
       "title": "Codex Now Has \"AI Pets\"",
       "date": "2026-05-09",
       "publishedAt": "2026-05-09T18:57:28+00:00",
-      "daysAgo": 2,
+      "daysAgo": 5,
       "duration": 1,
       "views": 0,
       "topics": [
@@ -580,7 +720,7 @@ window.__DATA__ = {
       "title": "Vibe coding works… until your agent confidently builds the wrong thing",
       "date": "2026-05-08",
       "publishedAt": "2026-05-08T21:57:20+00:00",
-      "daysAgo": 3,
+      "daysAgo": 6,
       "duration": 1,
       "views": 0,
       "topics": [
@@ -614,7 +754,7 @@ window.__DATA__ = {
       "title": "OpenAI's ChatGPT 5.5 Instant: The Good, The Bad And The Insane",
       "date": "2026-05-08",
       "publishedAt": "2026-05-08T16:46:30+00:00",
-      "daysAgo": 3,
+      "daysAgo": 6,
       "duration": 7,
       "views": 0,
       "topics": [
@@ -653,7 +793,7 @@ window.__DATA__ = {
       "title": "New ChatGPT Model & Memory Features Explained (AI News You Can Use)",
       "date": "2026-05-08",
       "publishedAt": "2026-05-08T16:13:15+00:00",
-      "daysAgo": 3,
+      "daysAgo": 6,
       "duration": 16,
       "views": 0,
       "topics": [
@@ -691,7 +831,7 @@ window.__DATA__ = {
       "title": "AI News: OpenAI Absolutely Cooked This Week!",
       "date": "2026-05-08",
       "publishedAt": "2026-05-08T15:00:27+00:00",
-      "daysAgo": 3,
+      "daysAgo": 6,
       "duration": 42,
       "views": 0,
       "topics": [
@@ -729,7 +869,7 @@ window.__DATA__ = {
       "title": "Live from Think 2026: AI operating model, VC funding & CAIO evolution",
       "date": "2026-05-08",
       "publishedAt": "2026-05-08T10:01:03+00:00",
-      "daysAgo": 3,
+      "daysAgo": 6,
       "duration": 35,
       "views": 0,
       "topics": [
@@ -766,7 +906,7 @@ window.__DATA__ = {
       "title": "How Ramp built an AI agent that can think outside of tokens | Alex Shevchenko",
       "date": "2026-05-07",
       "publishedAt": "2026-05-07T14:01:28+00:00",
-      "daysAgo": 4,
+      "daysAgo": 7,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -801,7 +941,7 @@ window.__DATA__ = {
       "title": "The Rise of Crypto Agility: How to Secure Systems for the Quantum Era",
       "date": "2026-05-07",
       "publishedAt": "2026-05-07T11:00:58+00:00",
-      "daysAgo": 4,
+      "daysAgo": 7,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -836,7 +976,7 @@ window.__DATA__ = {
       "title": "Your AI Setup Needs This",
       "date": "2026-05-06",
       "publishedAt": "2026-05-06T19:00:00+00:00",
-      "daysAgo": 5,
+      "daysAgo": 8,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -871,7 +1011,7 @@ window.__DATA__ = {
       "title": "Build A Second Brain That Remembers Everything",
       "date": "2026-05-06",
       "publishedAt": "2026-05-06T18:19:41+00:00",
-      "daysAgo": 5,
+      "daysAgo": 8,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -906,7 +1046,7 @@ window.__DATA__ = {
       "title": "DeepSeek V4 AI Beats Billion Dollar Systems…For Free",
       "date": "2026-05-06",
       "publishedAt": "2026-05-06T16:07:54+00:00",
-      "daysAgo": 5,
+      "daysAgo": 8,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -940,7 +1080,7 @@ window.__DATA__ = {
       "title": "Build Interactive Agents with Generative UI",
       "date": "2026-05-06",
       "publishedAt": "2026-05-06T14:45:14+00:00",
-      "daysAgo": 5,
+      "daysAgo": 8,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -975,7 +1115,7 @@ window.__DATA__ = {
       "title": "How Clay manages 300M agent runs a month with LangSmith",
       "date": "2026-05-06",
       "publishedAt": "2026-05-06T13:05:36+00:00",
-      "daysAgo": 5,
+      "daysAgo": 8,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1010,7 +1150,7 @@ window.__DATA__ = {
       "title": "Claude Security’s public beta, OpenAI’s five-point plan and cybersecurity’s Y2K moment",
       "date": "2026-05-06",
       "publishedAt": "2026-05-06T10:00:31+00:00",
-      "daysAgo": 5,
+      "daysAgo": 8,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1045,7 +1185,7 @@ window.__DATA__ = {
       "title": "Just deployed to production… and leaked all the credit cards 😬",
       "date": "2026-05-05",
       "publishedAt": "2026-05-05T19:00:49+00:00",
-      "daysAgo": 6,
+      "daysAgo": 9,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1080,7 +1220,7 @@ window.__DATA__ = {
       "title": "LangChain Live Stream",
       "date": "2026-05-04",
       "publishedAt": "2026-05-04T18:42:04+00:00",
-      "daysAgo": 7,
+      "daysAgo": 10,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1115,7 +1255,7 @@ window.__DATA__ = {
       "title": "Should You Use a Sandbox for Your Agent? | Max Agency #aidesign #aiinfrastructure",
       "date": "2026-05-04",
       "publishedAt": "2026-05-04T14:01:08+00:00",
-      "daysAgo": 7,
+      "daysAgo": 10,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1150,7 +1290,7 @@ window.__DATA__ = {
       "title": "NVIDIA's New AI Turns One Photo Into A World That Never Breaks",
       "date": "2026-05-03",
       "publishedAt": "2026-05-03T17:02:48+00:00",
-      "daysAgo": 8,
+      "daysAgo": 11,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1184,7 +1324,7 @@ window.__DATA__ = {
       "title": "I Made Presentations Using Every AI. This is the Best One By Far!",
       "date": "2026-05-02",
       "publishedAt": "2026-05-02T14:01:16+00:00",
-      "daysAgo": 9,
+      "daysAgo": 12,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1219,7 +1359,7 @@ window.__DATA__ = {
       "title": "OpenAI Codex Can Now Use Your Computer! (Full Breakdown + Testing)",
       "date": "2026-05-01",
       "publishedAt": "2026-05-01T17:06:48+00:00",
-      "daysAgo": 10,
+      "daysAgo": 13,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1254,7 +1394,7 @@ window.__DATA__ = {
       "title": "Sakana AI’s God Simulator Is Brilliant",
       "date": "2026-05-01",
       "publishedAt": "2026-05-01T16:43:34+00:00",
-      "daysAgo": 10,
+      "daysAgo": 13,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1288,7 +1428,7 @@ window.__DATA__ = {
       "title": "Solved: The Bug That Haunted AI Video For Years",
       "date": "2026-04-28",
       "publishedAt": "2026-04-28T17:16:01+00:00",
-      "daysAgo": 13,
+      "daysAgo": 16,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1322,7 +1462,7 @@ window.__DATA__ = {
       "title": "ChatGPT Images 2.0 is INSANE! 🤯",
       "date": "2026-04-28",
       "publishedAt": "2026-04-28T15:40:06+00:00",
-      "daysAgo": 13,
+      "daysAgo": 16,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1357,7 +1497,7 @@ window.__DATA__ = {
       "title": "Become an AI power user 🌟 new course from Andrew Ng",
       "date": "2026-04-28",
       "publishedAt": "2026-04-28T15:00:32+00:00",
-      "daysAgo": 13,
+      "daysAgo": 16,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1392,7 +1532,7 @@ window.__DATA__ = {
       "title": "GPT 5.5 Arrives, DeepSeek V4 Drops, and the Compute War Intensifies",
       "date": "2026-04-24",
       "publishedAt": "2026-04-24T18:45:02+00:00",
-      "daysAgo": 17,
+      "daysAgo": 20,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1427,7 +1567,7 @@ window.__DATA__ = {
       "title": "ChatGPT Just Changed Forever...",
       "date": "2026-04-24",
       "publishedAt": "2026-04-24T17:09:47+00:00",
-      "daysAgo": 17,
+      "daysAgo": 20,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1462,7 +1602,7 @@ window.__DATA__ = {
       "title": "📉 Turn your multimodal data into something you can actually query",
       "date": "2026-04-22",
       "publishedAt": "2026-04-22T14:33:13+00:00",
-      "daysAgo": 19,
+      "daysAgo": 22,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1497,7 +1637,7 @@ window.__DATA__ = {
       "title": "Claude Opus 4.7 - A New Frontier, in Performance … and Drama",
       "date": "2026-04-17",
       "publishedAt": "2026-04-17T18:07:46+00:00",
-      "daysAgo": 24,
+      "daysAgo": 27,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1532,7 +1672,7 @@ window.__DATA__ = {
       "title": "Claude Mythos: Highlights from 244-page Release",
       "date": "2026-04-08",
       "publishedAt": "2026-04-08T17:39:20+00:00",
-      "daysAgo": 33,
+      "daysAgo": 36,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1567,7 +1707,7 @@ window.__DATA__ = {
       "title": "Two AI Models Set to “stir government urgency”, But Will This Challenge Undo Them?",
       "date": "2026-03-26",
       "publishedAt": "2026-03-26T20:15:12+00:00",
-      "daysAgo": 46,
+      "daysAgo": 49,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1602,7 +1742,7 @@ window.__DATA__ = {
       "title": "I BUILT A FULLY AUTOMATIC MANSPLAINER",
       "date": "2026-03-06",
       "publishedAt": "2026-03-06T22:07:33+00:00",
-      "daysAgo": 66,
+      "daysAgo": 69,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1637,7 +1777,7 @@ window.__DATA__ = {
       "title": "What the New ChatGPT 5.4 Means for the World",
       "date": "2026-03-06",
       "publishedAt": "2026-03-06T16:25:26+00:00",
-      "daysAgo": 66,
+      "daysAgo": 69,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1672,7 +1812,7 @@ window.__DATA__ = {
       "title": "Traditional X-Mas Stream",
       "date": "2025-12-29",
       "publishedAt": "2025-12-29T03:44:20+00:00",
-      "daysAgo": 133,
+      "daysAgo": 137,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1707,7 +1847,7 @@ window.__DATA__ = {
       "title": "Traditional Holiday Live Stream",
       "date": "2025-12-28",
       "publishedAt": "2025-12-28T12:41:54+00:00",
-      "daysAgo": 134,
+      "daysAgo": 137,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1742,7 +1882,7 @@ window.__DATA__ = {
       "title": "TiDAR: Think in Diffusion, Talk in Autoregression (Paper Analysis)",
       "date": "2025-12-27",
       "publishedAt": "2025-12-27T14:33:29+00:00",
-      "daysAgo": 135,
+      "daysAgo": 138,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1777,7 +1917,7 @@ window.__DATA__ = {
       "title": "Titans: Learning to Memorize at Test Time (Paper Analysis)",
       "date": "2025-12-14",
       "publishedAt": "2025-12-14T16:22:15+00:00",
-      "daysAgo": 148,
+      "daysAgo": 151,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1812,7 +1952,7 @@ window.__DATA__ = {
       "title": "How I use LLMs",
       "date": "2025-02-27",
       "publishedAt": "2025-02-27T22:29:56+00:00",
-      "daysAgo": 438,
+      "daysAgo": 441,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1847,7 +1987,7 @@ window.__DATA__ = {
       "title": "Deep Dive into LLMs like ChatGPT",
       "date": "2025-02-05",
       "publishedAt": "2025-02-05T18:23:47+00:00",
-      "daysAgo": 460,
+      "daysAgo": 463,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1882,7 +2022,7 @@ window.__DATA__ = {
       "title": "Let's reproduce GPT-2 (124M)",
       "date": "2024-06-09",
       "publishedAt": "2024-06-09T23:31:35+00:00",
-      "daysAgo": 701,
+      "daysAgo": 704,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1917,7 +2057,7 @@ window.__DATA__ = {
       "title": "Let's build the GPT Tokenizer",
       "date": "2024-02-20",
       "publishedAt": "2024-02-20T17:11:35+00:00",
-      "daysAgo": 811,
+      "daysAgo": 814,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -1952,7 +2092,7 @@ window.__DATA__ = {
       "title": "[1hr Talk] Intro to Large Language Models",
       "date": "2023-11-23",
       "publishedAt": "2023-11-23T02:27:48+00:00",
-      "daysAgo": 901,
+      "daysAgo": 904,
       "duration": 0,
       "views": 0,
       "topics": [
@@ -2374,10 +2514,10 @@ window.__DATA__ = {
       "speech AI": 0,
       "LLM apps": 0,
       "tutorials": 0,
-      "courses": 4,
-      "interviews": 4,
-      "LLM concepts": 4,
-      "AI engineering": 4,
+      "courses": 8,
+      "interviews": 8,
+      "LLM concepts": 8,
+      "AI engineering": 8,
       "generative AI": 0,
       "predictive AI": 0
     }
@@ -2387,152 +2527,168 @@ window.__DATA__ = {
       "t": 1778509246000,
       "verb": "ingest",
       "msg": "10 videos fetched, 10 new",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778509263000,
       "verb": "summarize",
       "msg": "0 summaries completed, 2 queued/failed",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778509300000,
       "verb": "summarize",
       "msg": "2 summaries completed, 0 queued/failed",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778509328000,
       "verb": "summarize",
       "msg": "5 summaries completed, 0 queued/failed",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778509849000,
       "verb": "ingest",
       "msg": "50 videos fetched, 40 new",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778509878000,
       "verb": "summarize",
       "msg": "0 summaries completed, 12 queued/failed",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778512100000,
       "verb": "ingest",
       "msg": "50 videos fetched, 0 new",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778512122000,
       "verb": "summarize",
       "msg": "0 summaries completed, 12 queued/failed",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778512548000,
       "verb": "ingest",
       "msg": "50 videos fetched, 0 new",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778512579000,
       "verb": "summarize",
       "msg": "0 summaries completed, 12 queued/failed",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778514584000,
       "verb": "ingest",
       "msg": "50 videos fetched, 0 new",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778514584000,
       "verb": "summarize",
       "msg": "0 summaries completed, 0 queued/failed",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778515194000,
       "verb": "summarize",
       "msg": "7 summaries completed, 0 queued/failed",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778515297000,
       "verb": "summarize",
       "msg": "8 summaries completed, 4 queued/failed",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778515397000,
       "verb": "ingest",
       "msg": "50 videos fetched, 0 new",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778515397000,
       "verb": "summarize",
       "msg": "0 summaries completed, 0 queued/failed",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778555079000,
       "verb": "ingest",
       "msg": "5 videos fetched, 0 new",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     },
     {
       "t": 1778555079000,
       "verb": "summarize",
       "msg": "0 summaries completed, 12 queued/failed",
-      "channel": "LangChain",
-      "vid": "PYJZJAna6pI",
-      "title": "What if AI agents skipped language entirely to communicate?"
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
+    },
+    {
+      "t": 1778825874000,
+      "verb": "ingest",
+      "msg": "20 videos fetched, 4 new",
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
+    },
+    {
+      "t": 1778825874000,
+      "verb": "summarize",
+      "msg": "0 summaries completed, 12 queued/failed",
+      "channel": "DeepLearning.AI",
+      "vid": "4R5mFLujbi8",
+      "title": "Data is hungry for context"
     }
   ],
   "META": {
     "source": "YouTube RSS + captions + transcript-backed summaries",
     "repository": "https://github.com/nurkyzaz/llm-youtube-landscape-tracker",
     "site": "https://nurkyzaz.github.io/llm-youtube-landscape-tracker/",
-    "lastUpdated": "2026-05-12T03:04:39+00:00",
+    "lastUpdated": "2026-05-15T06:17:54+00:00",
     "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; GitHub-hosted runners may be blocked by YouTube."
   }
 };

@@ -178,5 +178,47 @@
     "stage": "summarize",
     "timestamp": "2026-05-12T03:04:39+00:00",
     "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; GitHub-hosted runners may be blocked by YouTube."
+  },
+  {
+    "channels": 10,
+    "failures": [
+      {
+        "channel": "Matt Wolfe",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UChpleBmo18P08aKCIgti38g"
+      },
+      {
+        "channel": "Two Minute Papers",
+        "error": "500 Server Error: Internal Server Error for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg"
+      },
+      {
+        "channel": "Yannic Kilcher",
+        "error": "500 Server Error: Internal Server Error for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew"
+      },
+      {
+        "channel": "The AI Advantage",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCHhYXsLBEVVnbvsq57n1MTQ"
+      },
+      {
+        "channel": "IBM Technology",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCKWaEZ-_VweaEx1j62do_vQ"
+      },
+      {
+        "channel": "LangChain",
+        "error": "404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UCC-lyoTfSrcJzA1ab3APAgw"
+      }
+    ],
+    "fetched": 20,
+    "new_videos": 4,
+    "stage": "ingest",
+    "timestamp": "2026-05-15T06:17:54+00:00"
+  },
+  {
+    "attempted": 12,
+    "completed": 0,
+    "failed": 12,
+    "proxy_configured": false,
+    "stage": "summarize",
+    "timestamp": "2026-05-15T06:17:54+00:00",
+    "warning": "WEBSHARE_USER/WEBSHARE_PASS secrets are not configured; GitHub-hosted runners may be blocked by YouTube."
   }
 ]
