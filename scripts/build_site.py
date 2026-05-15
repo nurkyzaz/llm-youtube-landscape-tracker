@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from datetime import datetime, timezone
 from typing import Any
 
@@ -241,6 +242,19 @@ def write_data_js(payload: dict[str, Any]) -> None:
     (SITE_DIR / "data.js").write_text(f"window.__DATA__ = {body};\n", encoding="utf-8")
 
 
+def write_index_cache_token(timestamp: str) -> None:
+    token = re.sub(r"[^0-9A-Za-z]+", "", timestamp) or "dev"
+    index_path = SITE_DIR / "index.html"
+    html = index_path.read_text(encoding="utf-8")
+    replacements = {
+        r'(<script src="data\.js)(?:\?v=[^"]*)?("></script>)': rf"\1?v={token}\2",
+        r'(<script src="assets/app\.js)(?:\?v=[^"]*)?("></script>)': rf"\1?v={token}\2",
+    }
+    for pattern, replacement in replacements.items():
+        html = re.sub(pattern, replacement, html)
+    index_path.write_text(html, encoding="utf-8")
+
+
 def ensure_design_files() -> None:
     required = ["index.html", "app.jsx", "ui.jsx", "tweaks-panel.jsx"]
     missing = [name for name in required if not (SITE_DIR / name).exists()]
@@ -277,6 +291,7 @@ def build_site() -> None:
         },
     }
     write_data_js(payload)
+    write_index_cache_token(payload["META"]["lastUpdated"])
 
 
 def main() -> None:
